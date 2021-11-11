@@ -388,7 +388,7 @@ header {
   position: relative;
   width: 100%;
   padding: 70px 0;
-  background: #1f1952;
+  background: #211d55;
 }
 
 .timer-block_grid {
@@ -507,17 +507,17 @@ header {
 
   .timer-back {
     position: relative;
-    height: 128px;
+    height: 168px;
   }
 
   .timer-back_hold {
     bottom: 0;
-    height: 149px;
+    height: 213px;
     align-items: flex-start;
   }
 
-  .timer-back_hold img {
-    width: 173px;
+  .timer-back_hold video {
+    width: 253px;
   }
 
   .mobile-coin {
