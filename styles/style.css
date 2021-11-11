@@ -507,17 +507,17 @@ header {
 
   .timer-back {
     position: relative;
-    height: 168px;
+    height: 235px;
   }
 
   .timer-back_hold {
     bottom: 0;
-    height: 213px;
+    height: auto;
     align-items: flex-start;
   }
 
   .timer-back_hold video {
-    width: 253px;
+    width: 270px;
   }
 
   .mobile-coin {
