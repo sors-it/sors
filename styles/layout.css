@@ -29,9 +29,9 @@
 
 .button {
   position: relative;
-  width: 140px;
+  /* width: 140px; */
   height: 44px;
-  /* padding: 0 30px; */
+  padding: 0 17px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,18 +49,6 @@
   transform-style: preserve-3d;
   z-index: 1;
   transition: 250ms ease-in-out;
-}
-
-.button::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 10px;
-  width: 120px;
-  height: 20px;
-  box-shadow: 0px 5px 8px 0px #1347e481;
-  border-radius: 20px;
-  transform: translateZ(-1px);
 }
 
 .button:hover {
@@ -86,19 +74,23 @@
   text-transform: none;
 }
 
-.button.button-grey::before {
-  display: none;
-}
-
 .button.button-icon {
-  width: 32px;
-  height: 32px;
-  background: #1348e4;
-  border-radius: 3px;
+  min-width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid rgba(19, 72, 228, 0.2);
+  background: none;
+  color: #1348E4;
 }
 
-.button.button-icon::before {
-  display: none;
+.button.button-border {
+  background: none;
+  border: 1px solid #1348E4;
+  color: #1348E4;
+}
+
+.button.h-40 {
+  height: 40px;
 }
 
 .title-comp {
@@ -127,12 +119,24 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+.gap-35 {
+  gap: 35px;
+}
+
 .gap-40 {
   gap: 40px;
 }
 
 .text-blue {
   color: #1348e4;
+}
+
+.w-40 {
+  width: 40px;
+}
+
+.w-75 {
+  width: 75px;
 }
 
 .fw-700 {
@@ -145,6 +149,10 @@
 
 .mr-15 {
   margin-right: 15px;
+}
+
+.ml-20 {
+  margin-left: 20px;
 }
 
 .mb-10 {

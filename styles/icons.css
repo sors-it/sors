@@ -1,0 +1,54 @@
+i {
+  display: inline-block;
+  background-size: 100% !important;
+  background-repeat: no-repeat !important;
+}
+
+.icon-dash {
+  width: 18px;
+  height: 20px;
+  background: url('../icons/icon-dash.svg');
+  transition: 250ms ease;
+}
+
+.icon-success {
+  width: 32px;
+  height: 32px;
+  background: url('../icons/icon-success.svg');
+}
+
+.icon-pending {
+  width: 32px;
+  height: 32px;
+  background: url('../icons/icon-pending.svg');
+}
+
+.icon-rejected {
+  width: 32px;
+  height: 32px;
+  background: url('../icons/icon-rejected.svg');
+}
+
+.icon-info {
+  width: 18px;
+  height: 18px;
+  background: url('../icons/icon-info.svg');
+}
+
+.icon-delete {
+  width: 15px;
+  height: 16px;
+  background: url('../icons/icon-delete.svg');
+}
+
+.icon-watch {
+  width: 20px;
+  height: 14px;
+  background: url('../icons/icon-watch.svg');
+}
+
+.icon-right {
+  width: 7px;
+  height: 12px;
+  background: url('../icons/icon-right.svg');
+}
