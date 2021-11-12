@@ -212,7 +212,7 @@ footer .container {
 
 .dashboard-container {
   min-height: calc(100vh - 160px);
-  padding: 30px 0 0;
+  padding: 30px 0 100px;
   box-sizing: border-box;
 }
 /* DASHBOARD PARTIALS */
@@ -283,29 +283,6 @@ footer .container {
   overflow: hidden;
 }
 
-.transaction-table .type-label {
-  width: 100px;
-  height: 32px;
-  border-radius: 5px;
-  font-weight: 700;
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  user-select: none;
-}
-
-.transaction-table .type-label.label-purchase {
-  color: #6BCA69;
-  background: rgba(107, 202, 105, 0.1);
-}
-
-.transaction-table .type-label.label-bonus {
-  color: #FFC56D;
-  background: rgba(255, 197, 109, 0.1);
-}
-
 .transaction-table .tokens,
 .transaction-table .amount {
   width: 12%;
@@ -327,6 +304,271 @@ footer .container {
   width: 15%;
 }
 /* TRANSACTION PAGE */
+
+/* ICO PAGE */
+.ico-page a {
+  color: #1348E4;
+  text-decoration: none;
+}
+
+.ico-group {
+  position: relative;
+}
+
+.ico-group p {
+  font-size: 16px;
+}
+
+.ico-group .ico-group_title {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.ico-group_content.grid-3 {
+  grid-template-columns: 1fr 1fr 180px;
+  gap: 30px 0;
+}
+
+.ico-schedule_col .schedule-col_top {
+  height: 32px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.schedule-col_title {
+  font-weight: 500;
+  font-size: 18px;
+  color: #1348E4;
+}
+
+.schedule-col_start {
+  margin-bottom: 5px;
+}
+
+.ico-schedule_last {
+  margin-top: auto;
+}
+
+.ico-schedule_line {
+  grid-column: 1 / 4;
+}
+
+.ico-page .button-bonus {
+  width: 160px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: none;
+}
+
+.ico-note {
+  font-size: 14px;
+  color: rgba(51, 51, 51, 0.5);
+}
+/* ICO PAGE */
+
+/* TOKEN BALANCE */
+.token-balance {
+  position: relative;
+  padding: 20px 20px 30px;
+  background: #333333;
+  box-shadow: 0px 5px 15px rgba(84, 84, 84, 0.05);
+  border-radius: 10px;
+}
+
+.token-balance_container {
+
+}
+
+.token-balance_top {
+  padding-bottom: 19px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255,2552,255,0.2);
+  display: flex;
+  gap: 17px;
+}
+
+.token-balance_logo {
+  width: 60px;
+  height: 60px;
+}
+
+.token-balance_numbers {
+  padding-top: 10px;
+}
+
+.token-balance_title {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.5);
+}
+
+.token-balance_value {
+  font-weight: 500;
+  font-size: 24px;
+  color: #ACC1FF;
+}
+
+.token-balance_value .smaller {
+  font-size: 16px;
+}
+
+.token-balance_contr .token-balance_value {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+/* TOKEN BALANCE */
+
+/* TOKEN PRE-SALE */
+.token-presale {
+
+}
+
+.tp-title {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.tp-title p {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.tp-title span {
+  font-size: 14px;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.tp-group .tp-group_title {
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.tp-group .tp-group_value {
+  font-size: 24px;
+}
+
+.tp-group .tp-group_value.value_v2 {
+  font-size: 16px;
+}
+
+.tp-group .tp-group_value .smaller {
+  font-size: 16px;
+}
+
+.tp-progress_row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tp-progress_text {
+  font-size: 16px;
+  color: rgba(51, 51, 51, 0.8);
+}
+
+.tp-progress_value {
+  font-size: 16px;
+  color: #1348E4;
+}
+
+.tp-progress_value span {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.tp-progress_value.progress-blue {
+  color: rgba(19, 72, 228, 0.5);
+}
+
+.tp-progress_value.progress-yellow {
+  color: #FFC56D;
+}
+
+.tp-progress_line {
+  position: relative;
+  width: 100%;
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
+}
+
+.tp-progress_line > div {
+  position: relative;
+  height: 5px;
+  background: rgba(19, 72, 228, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.tp-progress_line > div span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.tp-progress_line .tp-progress_soft-cap span,
+.tp-progress_line .tp-progress_center span,
+.tp-progress_line .tp-progress_hard-cap span {
+  background: #1348E4;
+  border-radius: 5px;
+}
+
+.tp-progress_line .tp-progress_hard-cap {
+  background: #FFEDC0;
+}
+
+.tp-timer {
+
+}
+
+.tp-timet_title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: rgba(51, 51, 51, 0.8);
+}
+
+.tp-timer_grid {
+  position: relative;
+  left: -20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.tp-timer_col {
+  text-align: center;
+}
+
+.tp-timer_col-time {
+  font-weight: 400;
+  font-size: 36px;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.tp-timer_col-time {
+  width: 100%;
+  display: block;
+  border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+.tp-timer_col-type {
+  font-weight: 400;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.tp-timer_grid .tp-timer_col:last-child .tp-timer_col-time {
+  border-right: none;
+}
+/* TOKEN PRE-SALE */
 
 /* UI COMPONENTS */
 .ui-bar {
@@ -360,7 +602,9 @@ footer .container {
   padding-right: 30px;
 }
 
-.ui-bar_body {}
+.ui-bar_body.py-20 {
+  padding: 20px 0;
+}
 
 .ui-pagination {
   position: relative;
@@ -389,5 +633,42 @@ footer .container {
 .ui-pagination_totals {
   color: rgba(51, 51, 51, 0.8);
   font-size: 16px;
+}
+
+.ui-label {
+  /* width: 100px; */
+  padding: 0 12px;
+  height: 32px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.ui-label.label-green {
+  color: #6BCA69;
+  background: rgba(107, 202, 105, 0.1);
+}
+
+.ui-label.label-yellow {
+  color: #FFC56D;
+  background: rgba(255, 197, 109, 0.1);
+}
+
+.ui-label.label-grey {
+  color: rgba(51, 51, 51, 0.5);
+  background: rgba(51, 51, 51, 0.05);
+}
+
+.ui-line {
+  width: 100%;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 5px 15px rgba(84, 84, 84, 0.05);
+  border-radius: 2px;
 }
 /* UI COMPONENTS */
