@@ -747,6 +747,96 @@ footer .container {
 }
 /* DASHBOARD PAGE */
 
+/* PROFILE PAGE */
+.profile-page .profile-wallet span {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(51, 51, 51, 0.8);
+  max-width: 160px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.profile-data .profile-tabs {
+  position: relative;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 5px 15px rgba(84, 84, 84, 0.05);
+  border-radius: 2px;
+}
+
+.profile-tabs .profile-tabs_item {
+  position: relative;
+  width: 130px;
+  font-size: 16px;
+  color: rgba(51, 51, 51, 0.7);
+  padding: 0 10px 10px;
+  text-align: center;
+  transition: 250ms ease-in-out;
+  cursor: pointer;
+  user-select: none;
+}
+
+.profile-tabs .profile-tabs_item.tab-active,
+.profile-tabs .profile-tabs_item:hover {
+  color: #1348e4;
+}
+
+.profile-tabs .profile-tabs_item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #1348e4;
+  border-radius: 3px 3px 0px 0px;
+  opacity: 0;
+  transition: 200ms ease-out;
+}
+
+.profile-tabs .profile-tabs_item.tab-active::after {
+  opacity: 1;
+}
+
+.profile-tab {
+  width: 100%;
+}
+
+.profile-tab .input {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+}
+
+.profile-tab .input-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: none;
+  z-index: 1;
+}
+
+.profile-tab .input-select_relative::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  bottom: 4px;
+  width: 32px;
+  height: 32px;
+  background: url("../icons/icon-down_group.svg");
+  cursor: pointer;
+  z-index: 0;
+}
+
+.profile-tab_full {
+  grid-column: 1 / 3;
+}
+/* PROFILE PAGE */
+
 /* UI COMPONENTS */
 .ui-bar {
   position: relative;

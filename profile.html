@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SORS Capital</title>
+    <link rel="stylesheet" href="./styles/font.css" />
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/icons.css" />
+  </head>
+  <body>
+    <div class="dashboard-page">
+      <header>
+        <div class="header-container">
+          <div class="container">
+            <a href="./index.html" class="header-logo">
+              <img src="./images/logo.svg" alt="" />
+            </a>
+
+            <div class="header-user">
+              <span>Welcome! Name Lastname</span>
+              <div class="header-user_avatar">
+                <img src="" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav class="dahsboard-navigation">
+          <div class="container">
+            <ul class="dahsboard-navigation_list">
+              <li class="navigation-list_link">
+                <a href="">
+                  <i class="icon-dash"></i>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li class="navigation-list_link">
+                <a href="">
+                  <i class="icon-dash"></i>
+                  <span>Buy tokens</span>
+                </a>
+              </li>
+              <li class="navigation-list_link">
+                <a href="">
+                  <i class="icon-dash"></i>
+                  <span>ICO Distribution</span>
+                </a>
+              </li>
+              <li class="navigation-list_link">
+                <a href="">
+                  <i class="icon-dash"></i>
+                  <span>Transactions</span>
+                </a>
+              </li>
+              <li class="navigation-list_link active">
+                <a href="">
+                  <i class="icon-dash"></i>
+                  <span>Profile</span>
+                </a>
+              </li>
+
+              <li class="navigation-list_link">
+                <a href="">
+                  <i class="icon-dash"></i>
+                  <span>KYC Application</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div class="dashboard-container">
+        <div class="container">
+          <div class="profile-page">
+            <div class="grid-2_1 gap-20">
+              <div class="grid-1 gap-20">
+                <div class="ui-bar">
+                  <div class="ui-bar_head">
+                    <h3 class="ui-bar_head-title">Profile Details</h3>
+                  </div>
+                  <div class="ui-bar_body">
+                    <div class="profile-data pb-30">
+                      <ul class="profile-tabs mb-20">
+                        <li
+                          class="profile-tabs_item"
+                          onclick="openItem(event, 'personal')"
+                          id="defaultOpen"
+                        >
+                          Personal Data
+                        </li>
+                        <li
+                          class="profile-tabs_item"
+                          onclick="openItem(event, 'settings')"
+                        >
+                          Settings
+                        </li>
+                        <li
+                          class="profile-tabs_item"
+                          onclick="openItem(event, 'password')"
+                        >
+                          Password
+                        </li>
+                      </ul>
+
+                      <div id="personal" class="profile-tab">
+                        <form class="grid-2 gap-20">
+                          <div class="input-group">
+                            <label for="name" class="fs-16 mb-10 op-3308">
+                              Full Name
+                            </label>
+                            <input
+                              type="text"
+                              name="name"
+                              id="name"
+                              class="input"
+                              placeholder="Name Lastname"
+                            />
+                          </div>
+
+                          <div class="input-group">
+                            <label for="email" class="fs-16 mb-10 op-3308">
+                              Email Address
+                            </label>
+                            <input
+                              type="email"
+                              name="email"
+                              id="email"
+                              class="input"
+                              placeholder="example@email.com"
+                            />
+                          </div>
+
+                          <div class="input-group">
+                            <label for="mobile" class="fs-16 mb-10 op-3308">
+                              Mobile Number
+                            </label>
+                            <input
+                              type="text"
+                              name="mobile"
+                              id="mobile"
+                              class="input"
+                              placeholder="+_ _ ( _ _ _ ) _ _ - _ _ - _ _ _"
+                            />
+                          </div>
+
+                          <div class="input-group">
+                            <label for="birth" class="fs-16 mb-10 op-3308">
+                              Date of Birth
+                            </label>
+                            <input
+                              type="date"
+                              name="birth"
+                              id="birth"
+                              class="input"
+                              placeholder="DD : MM : YY"
+                            />
+                          </div>
+
+                          <div class="input-group">
+                            <label for="nation" class="fs-16 mb-10 op-3308">
+                              Nationality
+                            </label>
+                            <div class="relative input-select_relative">
+                              <select
+                                name="nation"
+                                id="nation"
+                                class="input input-select"
+                              >
+                                <option value="USA">United States</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="CN">China</option>
+                              </select>
+                            </div>
+                          </div>
+
+                          <div></div>
+
+                          <div class="d-flex mt-10">
+                            <button class="button button-blue">
+                              Update Profile
+                            </button>
+                          </div>
+
+                          <div class="d-flex j-end a-end">
+                            <div class="ui-label label-green">
+                              All Changes are saved
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+
+                      <div id="settings" class="profile-tab">
+                        <div class="profile-tab_group mb-30">
+                          <p class="mb-10 fw-400">Security Settings</p>
+                          <div class="input-group input-checkbox mb-10">
+                            <input
+                              type="checkbox"
+                              id="actl"
+                              name="actl"
+                              class="input-check"
+                            />
+                            <label for="actl" class="label-check">
+                              Save my Activities Log
+                            </label>
+                          </div>
+                          <div class="input-group input-checkbox">
+                            <input
+                              type="checkbox"
+                              id="pass"
+                              name="pass"
+                              class="input-check"
+                              checked
+                            />
+                            <label for="pass" class="label-check">
+                              Confirm me through email before password change
+                            </label>
+                          </div>
+                        </div>
+                        <div class="profile-tab_group mb-50">
+                          <p class="mb-10 fw-400">Manage Notification</p>
+                          <div class="input-group input-checkbox mb-10">
+                            <input
+                              type="checkbox"
+                              id="news"
+                              name="news"
+                              class="input-check"
+                            />
+                            <label for="news" class="label-check">
+                              Notify me by email about sales and latest news
+                            </label>
+                          </div>
+                          <div class="input-group input-checkbox">
+                            <input
+                              type="checkbox"
+                              id="unsl"
+                              name="unsl"
+                              class="input-check"
+                              checked
+                            />
+                            <label for="unsl" class="label-check">
+                              Alert me by email for unusual activity
+                            </label>
+                          </div>
+                        </div>
+                        <div class="d-flex j-end">
+                          <div class="ui-label label-green">
+                            All Changes are saved
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="password" class="profile-tab">
+                        <form class="grid-2 gap-20">
+                          <div class="input-group">
+                            <label for="pass1" class="fs-16 mb-10 op-3308">
+                              Old Password
+                            </label>
+                            <input
+                              type="password"
+                              name="pass1"
+                              id="pass1"
+                              class="input"
+                              placeholder="Enter your old password"
+                            />
+                          </div>
+
+                          <div></div>
+
+                          <div class="input-group">
+                            <label for="pass2" class="fs-16 mb-10 op-3308">
+                              New Password
+                            </label>
+                            <input
+                              type="password"
+                              name="pass2"
+                              id="pass2"
+                              class="input"
+                              placeholder="Enter new password"
+                            />
+                          </div>
+
+                          <div class="input-group">
+                            <label for="pass3" class="fs-16 mb-10 op-3308">
+                              Confirm New Password
+                            </label>
+                            <input
+                              type="password"
+                              name="pass3"
+                              id="pass3"
+                              class="input"
+                              placeholder="Confirm new password"
+                            />
+                          </div>
+
+                          <div class="profile-tab_full">
+                            <span class="d-flex a-center fs-14 op-3305">
+                              <i class="icon-info mr-5"></i>
+                              Password should be minmum 8 letter and include
+                              lower and uppercase letter.
+                            </span>
+                          </div>
+
+                          <div class="d-flex mt-10">
+                            <button class="button button-blue">Update</button>
+                          </div>
+
+                          <div class="d-flex j-end a-end">
+                            <div class="ui-label label-green">
+                              All Changes are saved
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ui-bar">
+                  <div class="ui-bar_head">
+                    <h3 class="ui-bar_head-title">Two-Factor Verification</h3>
+                  </div>
+                  <div class="ui-bar_body">
+                    <p class="fs-16 op-3308 mb-30">
+                      Two-factor authentication is a method for protection your
+                      web account. When it is activated you need to enter not
+                      only your password, but also a special code. You can
+                      receive this code by in mobile app. Even if third person
+                      will find your password, then can't access with that code.
+                    </p>
+                    <div class="d-flex a-center j-between mb-30">
+                      <button class="button button-blue">Enable 2FA</button>
+
+                      <div class="d-flex a-center gap-10">
+                        <span class="fs-16 op-3305">Current Status:</span>
+                        <div class="ui-label label-grey">Disabled</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grid-1 gap-20">
+                <div class="ui-bar">
+                  <div class="ui-bar_head">
+                    <h3 class="ui-bar_head-title">Your Account Status</h3>
+                  </div>
+                  <div class="ui-bar_body pb-15">
+                    <div class="d-flex gap-10 mb-30">
+                      <div class="ui-label label-green">Email verified</div>
+
+                      <div class="ui-label label-yellow">KYC Pending</div>
+                    </div>
+
+                    <div>
+                      <p class="mb-10">Receiving Wallet</p>
+
+                      <div class="d-flex a-center j-between">
+                        <span class="profile-wallet">
+                          <span>0xde0b295669a9fd93d5f28d9ec85e40f4c</span>
+                          <i class="icon-info"></i>
+                        </span>
+
+                        <button class="button h-40">Edit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ui-bar">
+                  <div class="ui-bar_head">
+                    <h3 class="ui-bar_head-title">Profile Details</h3>
+                  </div>
+                  <div class="ui-bar_body pb-25">
+                    <p class="fs-16 op-3308 mb-10">
+                      To comply with regulation, participant will have to go
+                      through indentity verification.
+                    </p>
+                    <p class="fs-16 op-3305 mb-30">
+                      You have not submitted your KYC application to verify your
+                      indentity.
+                    </p>
+                    <button class="button button-blue mb-20">
+                      Click to proceed
+                    </button>
+                    <span class="fs-14 text-red"
+                      >* KYC verification required for purchase token</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="container">
+          <ul class="footer-navigation">
+            <li class="footer-navigation_link">
+              <a href="">Wahitepaper</a>
+            </li>
+            <li class="footer-navigation_link">
+              <a href="">FAQs</a>
+            </li>
+            <li class="footer-navigation_link">
+              <a href="">Privacy Police</a>
+            </li>
+            <li class="footer-navigation_link">
+              <a href="">Terms of Condition</a>
+            </li>
+          </ul>
+
+          <div class="d-flex a-center gap-35">
+            <p class="footer-rights">© 2021 SORS Capital</p>
+            <div class="language-select">
+              <div class="language-select_active">
+                <img src="./icons/icon-uk.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      function openItem(evt, tab) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("profile-tab");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("profile-tabs_item");
+
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(
+            " tab-active",
+            ""
+          );
+        }
+        console.log(tab, document.getElementById(tab));
+        document.getElementById(tab).style.display = "block";
+        evt.currentTarget.className += " tab-active";
+      }
+
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+</html>

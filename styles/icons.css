@@ -59,6 +59,12 @@ i {
   background: url("../icons/icon-right.svg");
 }
 
+.icon-down {
+  width: 12px;
+  height: 7px;
+  background: url("../icons/icon-down.svg");
+}
+
 .icon-right_white {
   width: 7px;
   height: 11px;
