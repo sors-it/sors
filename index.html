@@ -31,7 +31,7 @@
         <nav class="dahsboard-navigation">
           <div class="container">
             <ul class="dahsboard-navigation_list">
-              <li class="navigation-list_link">
+              <li class="navigation-list_link active">
                 <a href="">
                   <i class="icon-dash"></i>
                   <span>Dashboard</span>
@@ -49,7 +49,7 @@
                   <span>ICO Distribution</span>
                 </a>
               </li>
-              <li class="navigation-list_link active">
+              <li class="navigation-list_link">
                 <a href="">
                   <i class="icon-dash"></i>
                   <span>Transactions</span>
@@ -74,9 +74,278 @@
       </header>
 
       <div class="dashboard-container">
-          <div class="container">
+        <div class="container">
+          <div class="main-page">
+            <div class="grid-1_2 gap-20">
+              <div class="token-balance">
+                <div class="token-balance_container">
+                  <div class="token-balance_top">
+                    <div class="token-balance_logo">
+                      <img src="./images/circle-logo.svg" alt="" />
+                    </div>
+                    <div class="token-balance_numbers">
+                      <p class="token-balance_title">Tokens Balance</p>
+                      <p class="token-balance_value">
+                        12,000.00 <span class="smaller">SORS</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="token-balance_contr">
+                    <p class="token-balance_title text-center mb-5">
+                      Your Contribution
+                    </p>
+                    <div class="token-balance_value">
+                      <span>0.033 ETH</span>
+                      <span>0.0005 BTC</span>
+                      <span>0.09 LTC</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
+              <div class="dashboard-rates ui-bar">
+                <div class="ui-bar_body py-20">
+                  <div class="grid-2 gap-60">
+                    <div class="ui-vertical"></div>
+                    <div class="dashboard-token">
+                      <div class="dashboard-token_logo">
+                        <img src="./images/color-logo.png" alt="" />
+                      </div>
+                      <div class="dashboard-token_rate">
+                        <div class="d-flex j-center gap-10 text-blue fs-35">
+                          <span>1 <span class="fs-16">ETH</span></span>
+                          <span>=</span>
+                          <span>1,340 <span class="fs-16">SORS</span></span>
+                        </div>
+                        <div class="d-flex j-center gap-10 fs-24">
+                          <span>1 <span class="fs-16">ETH</span></span>
+                          <span>=</span>
+                          <span>$6,340</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="dashboard-token_info fs-16 fw-700">
+                      <div>
+                        <div class="token-info_row mb-10">
+                          <p>Token Name:</p>
+                          <p class="text-blue_op8">SORS Capital</p>
+                        </div>
+                        <div class="token-info_row">
+                          <p>Ticket Symbol:</p>
+                          <p class="text-blue_op8">SORS</p>
+                        </div>
+                      </div>
+                      <div class="dashboard-token_info-download">
+                        <a href="" download="" class="button button-blue">
+                          <i class="icon-download mr-10"></i>
+                          Download whitepeper
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dashboard-calculator ui-bar">
+                <div class="ui-bar_body py-20">
+                  <p class="mb-5">Token Calculation</p>
+                  <form>
+                    <div class="input-group input-group_flabel mb-10">
+                      <label for="amount" class="mb-5 fs-16 fw-400 op-3308">
+                        Enter amount to calculate token
+                      </label>
+                      <div class="d-flex a-end gap-10">
+                        <div class="relative">
+                          <input
+                            type="text"
+                            name="amount"
+                            id="amount"
+                            class="input"
+                            placeholder="1"
+                          />
+                          <select
+                            name="curr"
+                            id="curr"
+                            class="input-flabel ui-drop"
+                          >
+                            <option value="ETH" selected>ETH</option>
+                            <option value="BTC">BTC</option>
+                            <option value="LTC">LTC</option>
+                          </select>
+                        </div>
+                        <span class="fs-24 op-3304 to-sors">
+                          = 1,340.34 <span class="fs-16">SORS</span>
+                        </span>
+                      </div>
+                    </div>
+                    <span class="fs-14 op-3305 d-flex a-center">
+                      <i class="icon-info mr-5"></i>
+                      Amount calculated based current tokens price
+                    </span>
+                    <button class="button button-blue mt-30">Buy Tokens</button>
+                  </form>
+                </div>
+              </div>
+
+              <div class="dashboard-transaction ui-bar">
+                <div class="ui-bar_head">
+                  <p class="ui-bar_head-title">Transaction</p>
+                  <button class="button h-40">
+                    View all
+                    <i class="icon-right ml-20"></i>
+                  </button>
+                </div>
+                <div class="ui-bar_body">
+                  <table class="dt-table transaction-table">
+                    <thead class="transaction-table_head">
+                      <tr>
+                        <td>SORS Tokens</td>
+                        <td>Amount</td>
+                        <td>Date</td>
+                        <td></td>
+                      </tr>
+                    </thead>
+                    <tbody class="transaction-table_body">
+                      <tr>
+                        <td>
+                          <div class="txid-col">
+                            <i class="icon-success"></i>
+                            <span>1,330.00</span>
+                          </div>
+                        </td>
+                        <td>0.930 ETH</td>
+                        <td>21.09.2021 12:32 pm</td>
+                        <td>
+                          <div class="type-col">
+                            <div class="ui-label label-green">Purchase</div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="txid-col">
+                            <i class="icon-pending"></i>
+                            <span>1,330.00</span>
+                          </div>
+                        </td>
+                        <td>0.930 ETH</td>
+                        <td>21.09.2021 12:32 pm</td>
+                        <td>
+                          <div class="type-col">
+                            <div class="ui-label label-green">Purchase</div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="txid-col">
+                            <i class="icon-rejected"></i>
+                            <span>1,330.00</span>
+                          </div>
+                        </td>
+                        <td>0.930 ETH</td>
+                        <td>21.09.2021 12:32 pm</td>
+                        <td>
+                          <div class="type-col">
+                            <div class="ui-label label-yellow">bonus</div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="dashboard-progress ui-bar">
+                <div class="ui-bar_body py-20">
+                  <div class="grid-1_2 gap-45">
+                    <div class="dp-token_sale">
+                      <div class="ui-vertical"></div>
+                      <p class="mb-15 fw-500">Token Sales Progress</p>
+                      <div class="tp-progress mb-20">
+                        <div class="tp-progress_row">
+                          <span class="tp-progress_text">Raised</span>
+                          <span class="tp-progress_text">Total</span>
+                        </div>
+                        <div class="tp-progress_row mb-10">
+                          <span class="tp-progress_value">3,230.23 SORS</span>
+                          <span class="tp-progress_value">2,000,000 SORS</span>
+                        </div>
+                        <div class="tp-progress_line">
+                          <div class="tp-progress_soft-cap">
+                            <span
+                              class="tp-progress_bar"
+                              style="width: 100%"
+                            ></span>
+                          </div>
+                          <div class="tp-progress_center">
+                            <span
+                              class="tp-progress_bar"
+                              style="width: 20%"
+                            ></span>
+                          </div>
+                          <div class="tp-progress_hard-cap">
+                            <span
+                              class="tp-progress_bar"
+                              style="width: 0%"
+                            ></span>
+                          </div>
+                        </div>
+                        <div class="tp-progress_row">
+                          <span class="tp-progress_value progress-blue">
+                            <span>Soft cap:</span> 40,000
+                          </span>
+                          <span class="tp-progress_value progress-yellow">
+                            <span>Hard cap:</span> 1,400,000
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="tp-timer">
+                        <p class="tp-timet_title">Sales end in</p>
+                        <div class="tp-timer_grid">
+                          <div class="tp-timer_col">
+                            <span class="tp-timer_col-time">26</span>
+                            <span class="tp-timer_col-type">Days</span>
+                          </div>
+                          <div class="tp-timer_col">
+                            <span class="tp-timer_col-time">09</span>
+                            <span class="tp-timer_col-type">Hours</span>
+                          </div>
+                          <div class="tp-timer_col">
+                            <span class="tp-timer_col-time">13</span>
+                            <span class="tp-timer_col-type">Minutes</span>
+                          </div>
+                          <div class="tp-timer_col">
+                            <span class="tp-timer_col-time">15</span>
+                            <span class="tp-timer_col-type">Seconds</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="dp-graph_sale">
+                      <div class="d-flex j-between mb-5">
+                        <p class="fw-500">Tokens Sale Graph</p>
+
+                        <select name="days" id="days" class="ui-drop mt-10m">
+                          <option value="7" selected>7days</option>
+                          <option value="14">14days</option>
+                          <option value="21">21days</option>
+                        </select>
+                      </div>
+
+                      <div class="dp-graph">
+                        <canvas id="saleGraph"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
       </div>
 
       <footer>
@@ -107,5 +376,76 @@
         </div>
       </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      const labels = [
+        "01 Oct",
+        "02 Oct",
+        "03 Oct",
+        "04 Oct",
+        "05 Oct",
+        "06 Oct",
+        "07 Oct"
+      ];
+      const data = {
+        labels: labels,
+        datasets: [
+          {
+            backgroundColor: "rgb(19, 72, 228)",
+            borderColor: "rgb(19, 72, 228)",
+            data: [100, 60, 140, 120, 60, 160, 60]
+          }
+        ]
+      };
+      const config = {
+        type: "line",
+        data: data,
+        options: {
+          responsive: true,
+          aspectRatio: 0,
+          tension: 0.3,
+          title: {
+            display: false
+          },
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          // layout: {
+          //   padding: {
+          //     right: 50,
+          //   },
+          // },
+          scales: {
+            y: {
+              beginAtZero: true,
+              stacked: true,
+              ticks: {
+                stepSize: 50,
+                color: "rgba(51,51,51,0.5)",
+                font: {
+                  family: "Circular Std",
+                  size: 14
+                }
+              }
+            },
+            x: {
+              ticks: {
+                align: "start",
+                color: "rgba(51,51,51,0.5)",
+                font: {
+                  family: "Circular Std",
+                  size: 14
+                }
+              }
+            }
+          }
+        }
+      };
+
+      const myChart = new Chart(document.getElementById("saleGraph"), config);
+    </script>
   </body>
 </html>

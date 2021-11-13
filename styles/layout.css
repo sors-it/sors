@@ -5,6 +5,10 @@
   width: 100%;
 }
 
+.relative {
+  position: relative;
+}
+
 .input-group {
   position: relative;
 }
@@ -41,7 +45,7 @@
   top: 4px;
   height: 32px;
   width: 52px;
-  background: #1348E4;
+  background: #1348e4;
   border-radius: 3px;
   display: flex;
   align-items: center;
@@ -49,7 +53,13 @@
   font-weight: 900;
   font-size: 14px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.input-flabel.input-flabel_drop {
+  width: auto;
+  padding: 0 10px;
 }
 
 .input-group.w-65p .input {
@@ -70,7 +80,7 @@
   font-family: "Circular Std";
   font-weight: 900;
   font-size: 14px;
-  color: #000000;
+  color: #1348e4;
   text-transform: uppercase;
   box-sizing: border-box;
   text-decoration: none;
@@ -109,13 +119,13 @@
   padding: 0;
   border: 1px solid rgba(19, 72, 228, 0.2);
   background: none;
-  color: #1348E4;
+  color: #1348e4;
 }
 
 .button.button-border {
   background: none;
-  border: 1px solid #1348E4;
-  color: #1348E4;
+  border: 1px solid #1348e4;
+  color: #1348e4;
 }
 
 .button.h-40 {
@@ -155,13 +165,26 @@
   align-items: center;
 }
 
+.a-end {
+  align-items: flex-end;
+}
+
 .j-between {
   justify-content: space-between;
+}
+
+.j-center {
+  justify-content: center;
 }
 
 .grid-1 {
   display: grid;
   grid-template-columns: 1fr;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .grid-3 {
@@ -172,6 +195,12 @@
 .grid-2_1 {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  align-items: flex-start;
+}
+
+.grid-1_2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   align-items: flex-start;
 }
 
@@ -191,16 +220,32 @@
   gap: 40px;
 }
 
+.gap-45 {
+  gap: 45px;
+}
+
+.gap-50 {
+  gap: 50px;
+}
+
+.gap-60 {
+  gap: 60px;
+}
+
 .text-blue {
   color: #1348e4;
 }
 
+.text-blue_op8 {
+  color: rgba(19, 72, 228, 0.8);
+}
+
 .text-red {
-  color: #F26A6A;
+  color: #f26a6a;
 }
 
 .bg-red {
-  background: #F26A6A;
+  background: #f26a6a;
 }
 
 .w-auto {
@@ -241,6 +286,10 @@
 
 .fs-24 {
   font-size: 24px;
+}
+
+.fs-35 {
+  font-size: 35px;
 }
 
 .mr-5 {
@@ -287,17 +336,21 @@
   margin-top: 30px;
 }
 
+.mt-10m {
+  margin-top: -10px;
+}
+
 .op-3308 {
   color: rgba(51, 51, 51, 0.8);
   font-size: 16px;
 }
 
 .op-3304 {
-  color: rgba(51, 51, 51, 0.4); 
+  color: rgba(51, 51, 51, 0.4);
 }
 
 .op-3305 {
-  color: rgba(51, 51, 51, 0.5); 
+  color: rgba(51, 51, 51, 0.5);
 }
 
 @media screen and (max-width: 1024px) {

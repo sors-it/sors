@@ -7,26 +7,26 @@ i {
 .icon-dash {
   width: 18px;
   height: 20px;
-  background: url('../icons/icon-dash.svg');
+  background: url("../icons/icon-dash.svg");
   transition: 250ms ease;
 }
 
 .icon-success {
   width: 32px;
   height: 32px;
-  background: url('../icons/icon-success.svg');
+  background: url("../icons/icon-success.svg");
 }
 
 .icon-pending {
   width: 32px;
   height: 32px;
-  background: url('../icons/icon-pending.svg');
+  background: url("../icons/icon-pending.svg");
 }
 
 .icon-rejected {
   width: 32px;
   height: 32px;
-  background: url('../icons/icon-rejected.svg');
+  background: url("../icons/icon-rejected.svg");
 }
 
 .icon-info {
@@ -38,31 +38,37 @@ i {
 }
 
 .icon-info.icon-info_red {
-  background: #F26A6A;
+  background: #f26a6a;
 }
 
 .icon-delete {
   width: 15px;
   height: 16px;
-  background: url('../icons/icon-delete.svg');
+  background: url("../icons/icon-delete.svg");
 }
 
 .icon-watch {
   width: 20px;
   height: 14px;
-  background: url('../icons/icon-watch.svg');
+  background: url("../icons/icon-watch.svg");
 }
 
 .icon-right {
   width: 7px;
   height: 12px;
-  background: url('../icons/icon-right.svg');
+  background: url("../icons/icon-right.svg");
 }
 
 .icon-right_white {
   width: 7px;
   height: 11px;
-  background: url('../icons/icon-right_white.svg');
+  background: url("../icons/icon-right_white.svg");
+}
+
+.icon-down {
+  width: 12px;
+  height: 7px;
+  background: url("../icons/icon-down.svg");
 }
 
 .icon-eth {
@@ -102,5 +108,11 @@ i {
   height: 24px;
   -webkit-mask-image: url("../icons/icon-close.svg");
   mask-image: url("../icons/icon-close.svg");
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.icon-download {
+  width: 21px;
+  height: 17px;
+  background: url("../icons/icon-download.svg");
 }
