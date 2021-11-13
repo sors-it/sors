@@ -27,6 +27,35 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
+.input-group label {
+  display: block;
+}
+
+.input-group_flabel .input {
+  padding-right: 60px;
+}
+
+.input-flabel {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  height: 32px;
+  width: 52px;
+  background: #1348E4;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.input-group.w-65p .input {
+  width: 65%;
+}
+
 .button {
   position: relative;
   /* width: 140px; */
@@ -122,6 +151,14 @@
   display: flex;
 }
 
+.a-center {
+  align-items: center;
+}
+
+.j-between {
+  justify-content: space-between;
+}
+
 .grid-1 {
   display: grid;
   grid-template-columns: 1fr;
@@ -136,6 +173,10 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: flex-start;
+}
+
+.gap-10 {
+  gap: 10px;
 }
 
 .gap-20 {
@@ -154,6 +195,14 @@
   color: #1348e4;
 }
 
+.text-red {
+  color: #F26A6A;
+}
+
+.bg-red {
+  background: #F26A6A;
+}
+
 .w-auto {
   width: auto;
 }
@@ -170,8 +219,32 @@
   width: 75px;
 }
 
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
 .fw-700 {
   font-weight: 700;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.mr-5 {
+  margin-right: 5px;
 }
 
 .mr-10 {
@@ -210,9 +283,21 @@
   margin-bottom: 75px;
 }
 
+.mt-30 {
+  margin-top: 30px;
+}
+
 .op-3308 {
   color: rgba(51, 51, 51, 0.8);
   font-size: 16px;
+}
+
+.op-3304 {
+  color: rgba(51, 51, 51, 0.4); 
+}
+
+.op-3305 {
+  color: rgba(51, 51, 51, 0.5); 
 }
 
 @media screen and (max-width: 1024px) {

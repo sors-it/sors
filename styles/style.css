@@ -75,7 +75,7 @@ body::-webkit-scrollbar-thumb {
 .dashboard-page {
   position: relative;
   width: 100%;
-  background: #FAFAFF;
+  background: #fafaff;
 }
 
 header {
@@ -86,7 +86,11 @@ header {
 
 .header-container {
   height: 60px;
-  background: #1348E4;
+  background: #1348e4;
+}
+
+.dark-header .header-container {
+  background: #333333;
 }
 
 .header-container .container {
@@ -105,14 +109,14 @@ header {
 .header-user span {
   font-weight: 500;
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .header-user_avatar {
   position: relative;
   width: 48px;
   height: 48px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 50%;
 }
 
@@ -120,7 +124,7 @@ header {
   width: 100%;
   height: 50px;
   display: flex;
-  background: #FFFFFF;
+  background: #ffffff;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -160,36 +164,35 @@ header {
 
 .dahsboard-navigation_list .navigation-list_link:last-child {
   margin-left: auto;
-
 }
 
 .navigation-list_link.active i,
 .navigation-list_link:hover i {
-  background: url("../icons/icon-dash_active.svg");
+  background: url('../icons/icon-dash_active.svg');
 }
 
 .dahsboard-navigation_list .navigation-list_link.active,
 .dahsboard-navigation_list .navigation-list_link:hover a {
-  color: #1348E4;
+  color: #1348e4;
 }
 
 .dahsboard-navigation_list .navigation-list_link.active::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
   height: 3px;
-  background: #1348E4;
+  background: #1348e4;
   border-radius: 3px 3px 0px 0px;
 }
 
 footer {
   position: relative;
   height: 50px;
-  background: #FFFFFF;
-  color: rgba(0,0,0,.5);
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 footer .container {
@@ -206,7 +209,7 @@ footer .container {
 
 .footer-navigation_link a {
   font-size: 17px;
-  color: rgba(0,0,0,.5);
+  color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
 }
 
@@ -229,7 +232,7 @@ footer .container {
 }
 
 .transaction-table td {
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .transaction-table_head td {
@@ -307,7 +310,7 @@ footer .container {
 
 /* ICO PAGE */
 .ico-page a {
-  color: #1348E4;
+  color: #1348e4;
   text-decoration: none;
 }
 
@@ -340,7 +343,7 @@ footer .container {
 .schedule-col_title {
   font-weight: 500;
   font-size: 18px;
-  color: #1348E4;
+  color: #1348e4;
 }
 
 .schedule-col_start {
@@ -369,6 +372,70 @@ footer .container {
 }
 /* ICO PAGE */
 
+/* BUY TOKENS PAGE */
+.buy-token_page {
+}
+
+.buy-token_page .tokens-list {
+  width: 100%;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+
+.tokens-list .tokens-list_item {
+  height: 40px;
+  padding: 0 15px 0 12px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(19, 72, 228, 0.2);
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.tokens-list_item .tokens-name {
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.tokens-list_item i {
+  margin-right: 10px;
+}
+
+.tokens-list_item .tokens-value {
+  margin-left: auto;
+  font-size: 16px;
+  font-weight: 450;
+}
+
+.tokens-list_item.active {
+  border: 2px solid #1348E4;
+}
+
+.tokens-list_item.active .tokens-name{
+  color: #1348E4;
+}
+
+.tokens-list_item.active i {
+  background: #1348E4;
+}
+
+.buy-tokens_step .input {
+  width: 210px;
+}
+
+.buy-tokens_step .smaller {
+  font-size: 16px; 
+}
+
+.buy-tokens_step .icon-info {
+  background: #F26A6A;
+}
+/* BUY TOKENS PAGE */
+
 /* TOKEN BALANCE */
 .token-balance {
   position: relative;
@@ -379,13 +446,12 @@ footer .container {
 }
 
 .token-balance_container {
-
 }
 
 .token-balance_top {
   padding-bottom: 19px;
   margin-bottom: 20px;
-  border-bottom: 1px solid rgba(255,2552,255,0.2);
+  border-bottom: 1px solid rgba(255, 2552, 255, 0.2);
   display: flex;
   gap: 17px;
 }
@@ -402,13 +468,13 @@ footer .container {
 .token-balance_title {
   font-size: 16px;
   font-weight: 600;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .token-balance_value {
   font-weight: 500;
   font-size: 24px;
-  color: #ACC1FF;
+  color: #acc1ff;
 }
 
 .token-balance_value .smaller {
@@ -424,7 +490,6 @@ footer .container {
 
 /* TOKEN PRE-SALE */
 .token-presale {
-
 }
 
 .tp-title {
@@ -475,7 +540,7 @@ footer .container {
 
 .tp-progress_value {
   font-size: 16px;
-  color: #1348E4;
+  color: #1348e4;
 }
 
 .tp-progress_value span {
@@ -487,7 +552,7 @@ footer .container {
 }
 
 .tp-progress_value.progress-yellow {
-  color: #FFC56D;
+  color: #ffc56d;
 }
 
 .tp-progress_line {
@@ -517,16 +582,15 @@ footer .container {
 .tp-progress_line .tp-progress_soft-cap span,
 .tp-progress_line .tp-progress_center span,
 .tp-progress_line .tp-progress_hard-cap span {
-  background: #1348E4;
+  background: #1348e4;
   border-radius: 5px;
 }
 
 .tp-progress_line .tp-progress_hard-cap {
-  background: #FFEDC0;
+  background: #ffedc0;
 }
 
 .tp-timer {
-
 }
 
 .tp-timet_title {
@@ -556,7 +620,7 @@ footer .container {
 .tp-timer_col-time {
   width: 100%;
   display: block;
-  border-right: 1px solid rgba(0,0,0,0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .tp-timer_col-type {
@@ -574,7 +638,7 @@ footer .container {
 .ui-bar {
   position: relative;
   padding: 0 20px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 5px 15px rgba(84, 84, 84, 0.05);
   border-radius: 10px;
   box-sizing: border-box;
@@ -626,8 +690,8 @@ footer .container {
 
 .ui-pagination_controls .button-icon:hover,
 .ui-pagination_controls .button-icon.active {
-  background: #1348E4;
-  color: #FFFFFF;
+  background: #1348e4;
+  color: #ffffff;
 }
 
 .ui-pagination_totals {
@@ -650,12 +714,12 @@ footer .container {
 }
 
 .ui-label.label-green {
-  color: #6BCA69;
+  color: #6bca69;
   background: rgba(107, 202, 105, 0.1);
 }
 
 .ui-label.label-yellow {
-  color: #FFC56D;
+  color: #ffc56d;
   background: rgba(255, 197, 109, 0.1);
 }
 
@@ -664,11 +728,79 @@ footer .container {
   background: rgba(51, 51, 51, 0.05);
 }
 
+.ui-label.label-blue {
+  color: #1348e4;
+  background: rgba(19, 72, 228, 0.1);
+}
+
+.ui-label.label-soft {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: none;
+}
+
 .ui-line {
   width: 100%;
   height: 2px;
   background: rgba(0, 0, 0, 0.05);
   box-shadow: 0px 5px 15px rgba(84, 84, 84, 0.05);
   border-radius: 2px;
+}
+
+.ui-alert {
+  width: 100%;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 5px 15px rgba(84, 84, 84, 0.05);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.ui-alert .ui-alert_text {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.ui-alert.alert-red {
+  background: #f26a6a;
+  color: #ffffff;
+}
+
+.ui-modal {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  z-index: 9999;
+  transition: opacity 250ms ease-out;
+}
+
+.ui-modal_overlay {
+  max-width: 780px;
+  width: 100%;
+}
+
+.ui-modal i {
+  flex-shrink: 0;
+}
+
+.ui-modal .icon-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.ui-modal.ui-modal_open {
+  left: 0;
+  opacity: 1;
 }
 /* UI COMPONENTS */
