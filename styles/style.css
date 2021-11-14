@@ -500,6 +500,10 @@ header {
     padding: 70px 0 0;
   }
 
+  .timer-block.timer-block_v2 {
+    padding: 70px 0;
+  }
+
   .timer-block_grid {
     grid-template-columns: 1fr;
     gap: 45px;
@@ -1095,6 +1099,7 @@ header {
   position: absolute;
   top: 0px;
   left: -11px;
+  width: 105px;
   z-index: 1;
   transform: rotateZ(346deg);
 }
