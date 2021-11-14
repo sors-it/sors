@@ -263,6 +263,10 @@ header {
   .nav-lang_mobile {
     display: block;
   }
+
+  .nav-lang_mobile {
+    width: 40px;
+  }
 }
 
 .intro-block {
@@ -1097,8 +1101,8 @@ header {
 
 .token-coin2 {
   position: absolute;
-  top: 0px;
-  left: -11px;
+  top: 10px;
+  left: 5px;
   width: 105px;
   z-index: 1;
   transform: rotateZ(346deg);
@@ -1655,4 +1659,54 @@ header {
 .viewer {
   height: 600px;
   width: 600px;
+}
+
+.license-page {
+  min-height: calc(100vh - 200px);
+}
+
+.license-page .blog-post_bg {
+  height: 300px;
+}
+
+.license-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.license-title_text {
+  font-size: 34px;
+  font-style: 700px;
+  color: #ffffff;
+}
+
+.license-item {
+  position: relative;
+  padding: 30px 30px 22px;
+  display: flex;
+  align-items: flex-start;
+  background: #ffffff;
+  box-shadow: 0px 5px 20px rgba(84, 84, 84, 0.05);
+  border-radius: 5px;
+}
+
+.license-item_image {
+  flex-shrink: 0;
+  margin-right: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.license-desc_title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.license-desc_link {
+  font-size: 16px;
+  color: #3f6ae6;
+  text-decoration: none;
 }
