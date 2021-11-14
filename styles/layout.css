@@ -167,6 +167,10 @@
   margin-bottom: 75px;
 }
 
+.mr-15 {
+  margin-right: 15px;
+}
+
 @media screen and (max-width: 1024px) {
   .container {
     max-width: 100%;
