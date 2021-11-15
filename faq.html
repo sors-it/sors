@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="dashboard-page">
-      <header class="dark-header">
+      <header>
         <div class="header-container">
           <div class="container">
             <a href="./index.html" class="header-logo">
@@ -37,7 +37,7 @@
                   <span>Dashboard</span>
                 </a>
               </li>
-              <li class="navigation-list_link active">
+              <li class="navigation-list_link">
                 <a href="./buy-tokens.html">
                   <i class="icon-dash"></i>
                   <span>Buy tokens</span>
@@ -75,90 +75,68 @@
 
       <div class="dashboard-container">
         <div class="container">
-          <div class="buy-token_page">
+          <div class="faq-page">
             <div class="grid-2_1 gap-20">
               <div class="ui-bar">
-                <div class="ui-bar_body py-20">
-                  <div class="buy-tokens_step">
-                    <div class="d-flex a-center gap-10 mb-10 a-xs-start">
-                      <div class="ui-label label-blue label-soft">Step 1</div>
-                      <p class="fw-500">
-                        Choose currency and calculate SORS tokens price
-                      </p>
-                    </div>
-                    <p class="op-3308 mb-30">
-                      You can buy our SORS tokens using ETH, BTC, LTC or USD to
-                      become part of Our project.
-                    </p>
-                    <div class="tokens-list">
-                      <div class="tokens-list_item active">
-                        <i class="icon-eth"></i>
-                        <span class="tokens-name">ETH</span>
-                        <span class="tokens-value">0.0008</span>
-                      </div>
-                      <div class="tokens-list_item">
-                        <i class="icon-btc"></i>
-                        <span class="tokens-name">BTC</span>
-                        <span class="tokens-value">0.000015</span>
-                      </div>
-                      <div class="tokens-list_item">
-                        <i class="icon-ltc"></i>
-                        <span class="tokens-name">LTC</span>
-                        <span class="tokens-value">0.001201</span>
-                      </div>
-                      <div class="tokens-list_item">
-                        <i class="icon-usd"></i>
-                        <span class="tokens-name">USD</span>
-                        <span class="tokens-value">0.25</span>
+                <div class="ui-bar_head">
+                  <p class="ui-bar_head-title">General</p>
+                </div>
+                <div class="ui-bar-body">
+                  <div class="faq-list">
+                    <div class="faq-item">
+                      <p class="faq-item_title">What is SORS?</p>
+                      <div class="content">
+                        <p class="faq-text">
+                          The SORS Token is a utility token issued by SORS
+                          Capital
+                        </p>
                       </div>
                     </div>
-                  </div>
-                  <div class="ui-line mb-30"></div>
-                  <div class="buy-tokens_step">
-                    <div class="d-flex a-center gap-10 mb-10">
-                      <div class="ui-label label-blue label-soft">Step 2</div>
-                      <p class="fw-500">Amount of contribute</p>
-                    </div>
-                    <p class="op-3308 mb-30">
-                      Enter your amount, you would like to contribute and
-                      calculate the amount of token you will received. The
-                      calculator helps to convert required currency to tokens.
-                    </p>
-                    <form >
-                      <div
-                        class="d-flex a-center gap-10 mb-10 column-xs a-xs-start"
-                      >
-                        <div class="input-group input-group_flabel">
-                          <input type="text" class="input" placeholder="1" />
-                          <span class="input-flabel">ETH</span>
-                        </div>
 
-                        <span class="fs-24 op-3304"
-                          >= 1,340.34 <span class="fs-16">SORS</span></span
-                        >
+                    <div class="faq-item">
+                      <p class="faq-item_title">
+                        What cryptocurrencies can I use to purchase?
+                      </p>
+                      <div class="content">
+                        <p class="faq-text">
+                          The SORS Token is a utility token issued by SORS
+                          Capital
+                        </p>
                       </div>
-                      <span class="fs-14 op-3305 d-flex a-center">
-                        <i class="icon-info mr-5"></i>
-                        0.35 ETH minimum contribution require.
-                      </span>
-                      <button class="button button-blue mt-30" type="submit" id="payModal">
-                        Buy Tokens
-                      </button>
-                    </form>
+                    </div>
+
+                    <div class="faq-item">
+                      <p class="faq-item_title">
+                        How can I participate in the ICO Token sale?
+                      </p>
+                      <div class="content">
+                        <p class="faq-text">
+                          The SORS Token is a utility token issued by SORS
+                          Capital The SORS Token is a utility token issued by
+                          SORS Capital
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="faq-item">
+                      <p class="faq-item_title">
+                        How do I benefit from the ICO Token?
+                      </p>
+                      <div class="content">
+                        <p class="faq-text">
+                          The SORS Token is a utility token issued by SORS
+                          Capital The SORS Token is a utility token issued by
+                          SORS Capital The SORS Token is a utility token issued
+                          by SORS Capital
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <!-- <div class="ui-line mb-20"></div> -->
               </div>
 
-              <div class="grid-1 gap-20" id="walletModal">
-                <div class="ui-alert alert-red">
-                  <div class="ui-alert_container">
-                    <span class="ui-alert_text">
-                      Add your wallet address before buy
-                      <i class="icon-right_white ml-20"></i>
-                    </span>
-                  </div>
-                </div>
-
+              <div class="grid-1 gap-20">
                 <div class="token-balance">
                   <div class="token-balance_container">
                     <div class="token-balance_top">
@@ -291,100 +269,6 @@
         </div>
       </div>
 
-      <div class="ui-modal">
-        <div class="ui-modal_overlay">
-          <div class="ui-bar">
-            <i class="icon-close" id="closeModal"></i>
-            <div class="ui-bar_body py-20">
-              <p class="mb-10 fw-500">Wallet Address</p>
-              <p class="fs-16 fw-400">
-                In order to receive your
-                <span class="text-blue fw-500">SORS Tokens</span>, please put
-                the address below input box.
-              </p>
-              <p class="fs-16 fw-700 mb-20">
-                You will receive SORS tokens to this address after the Token
-                Sale end.
-              </p>
-              <form>
-                <div class="input-group mb-10 w-65p">
-                  <label for="wallet" class="mb-5 fs-16 fw-400 op-3308"
-                    >Your Address for tokens:</label
-                  >
-                  <input
-                    type="text"
-                    name="wallet"
-                    id="wallet"
-                    class="input"
-                    placeholder="0xde0b295669a9fd93d5f28d9ec85e40f4c"
-                  />
-                </div>
-                <p class="mb-20 fs-14 fw-400 op-3305">
-                  Note: Address should be Polygon ERC20-compliant.
-                </p>
-
-                <div class="d-flex gap-10 mb-30 fs-14 text-red">
-                  <i class="bg-red icon-info icon-info_red"></i>
-                  DO NOT USE your exchange wallet address such as Kraken,
-                  Bitfinex, Bithumb, Binance etc. You can use MetaMask,
-                  MayEtherWallet, Mist wallets etc. Do not use the address if
-                  you don’t have a private key of the your address. You WILL NOT
-                  receive SORS Tokens and WILL LOSE YOUR FUNDS if you do.
-                </div>
-                <div
-                  class="d-flex j-between a-center column-xs a-xs-start gap-xs-20"
-                >
-                  <button class="button button-blue">Add Wallet</button>
-
-                  <div class="ui-label label-green">Added wallet address</div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="ui-modal buy-modal">
-        <div class="ui-modal_overlay">
-          <div class="ui-bar">
-            <i class="icon-close"></i>
-            <div class="ui-bar_body py-20">
-              <p class="mb-10 fw-500 mb-20">Buy SORS</p>
-
-              <div class="trans-border mb-20">
-                <div class="buy-modal_row">
-                  <div class="qr-code">
-                    <img src="./images/qr-code.png" alt="" width="190" height="190" class="qr-code_image" />
-                  </div>
-                  <div class="trans-list_rows">
-                    <div class="trans-row">
-                      <span>Wallet type:</span>
-                      <span class="trans-row_val">Bitcoin</span>
-                    </div>
-                    <div class="trans-row">
-                      <span>Amount to send:</span>
-                      <span class="trans-row_val">0.01</span>
-                    </div>
-                    <div class="trans-row">
-                      <span>TX Status:</span>
-                      <span class="trans-row_val">Waiting</span>
-                    </div>
-                    <div class="trans-row">
-                      <span>Wallet address to send:</span>
-                      <span class="trans-row_val">232ihjn53j4n5k3jnkn3jn45k34n53453</span>
-                    </div>
-                    <div class="trans-row">
-                      <span>TX Hash:</span>
-                      <span class="trans-row_val">DKJNJJNDKVFKVNSNVMSDHV</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <footer>
         <div class="container">
           <ul class="footer-navigation">
@@ -415,46 +299,20 @@
     </div>
 
     <script>
-      const modalShow = document.getElementById("walletModal");
-      const modalPayShow = document.getElementById("payModal");
-      const modalClose = document.querySelectorAll(".icon-close");
-      const modal = document.getElementsByClassName("ui-modal")[0];
-      const modalPay = document.getElementsByClassName("ui-modal")[1];
+      var acc = document.getElementsByClassName('faq-item_title');
+      var i;
 
-      function toggleModal() {
-        if (modal.classList.contains("ui-modal_open")) {
-          modal.classList.remove("ui-modal_open");
-          document.body.style.overflow = "";
-        } else {
-          modal.classList.add("ui-modal_open");
-          document.body.style.overflow = "hidden";
-        }
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener('click', function () {
+          this.classList.toggle('active');
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + 'px';
+          }
+        });
       }
-
-      function toggleModalPay() {
-        if (modalPay.classList.contains("ui-modal_open")) {
-          modalPay.classList.remove("ui-modal_open");
-          document.body.style.overflow = "";
-        } else {
-          modalPay.classList.add("ui-modal_open");
-          document.body.style.overflow = "hidden";
-        }
-      }
-
-      function closeModals() {
-        modal.classList.remove("ui-modal_open");
-        modalPay.classList.remove("ui-modal_open");
-        document.body.style.overflow = "hidden";
-      }
-
-      modalShow.addEventListener("click", toggleModal);
-      modalPayShow.addEventListener("click", function(event) {
-        event.preventDefault();
-        toggleModalPay();
-      });
-      modalClose.forEach(element => {
-        element.addEventListener('click', closeModals);
-      });
     </script>
   </body>
 </html>

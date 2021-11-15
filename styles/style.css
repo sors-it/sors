@@ -1167,6 +1167,69 @@ footer .container {
 }
 /* AUTH PAGE */
 
+/* FAQ PAGE */
+.faq-list {
+  width: 100%;
+}
+
+.faq-item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+.faq-item:hover {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.faq-item .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.faq-item .faq-item_title {
+  position: relative;
+  padding: 16px 15px 20px 50px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.faq-item .faq-text {
+  padding: 0 11px 25px 50px;
+  font-size: 14px;
+  color: rgba(51,51,51,0.5);
+}
+
+.faq-item .faq-item_title::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 24px;
+  height: 2px;
+  width: 17px;
+  background: rgba(0,0,0,0.2);
+}
+
+.faq-item .faq-item_title::after {
+  content: "";
+  position: absolute;
+  left: 23px;
+  top: 16px;
+  height: 17px;
+  width: 2px;
+  background: rgba(0,0,0,0.2);
+  transition: transform 190ms ease-out;
+}
+
+.faq-item_title.active::after {
+  transform: rotate(90deg);
+}
+/* FAQ PAGE */
+
 /* UI COMPONENTS */
 .ui-bar {
   position: relative;
