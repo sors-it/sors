@@ -32,6 +32,7 @@ i {
 .icon-info {
   width: 18px;
   height: 18px;
+  flex-shrink: 0;
   -webkit-mask-image: url("../icons/icon-info.svg");
   mask-image: url("../icons/icon-info.svg");
   background: rgba(51, 51, 51, 0.2);
@@ -121,4 +122,10 @@ i {
   width: 21px;
   height: 17px;
   background: url("../icons/icon-download.svg");
+}
+
+.icon-lock {
+  width: 14px;
+  height: 18px;
+  background: url("../icons/icon-lock.svg");
 }

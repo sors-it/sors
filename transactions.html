@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SORS Capital</title>
+    <title>SORS</title>
     <link rel="stylesheet" href="./styles/font.css" />
     <link rel="stylesheet" href="./styles/layout.css" />
     <link rel="stylesheet" href="./styles/style.css" />
@@ -32,31 +32,31 @@
           <div class="container">
             <ul class="dahsboard-navigation_list">
               <li class="navigation-list_link">
-                <a href="">
+                <a href="./index.html">
                   <i class="icon-dash"></i>
                   <span>Dashboard</span>
                 </a>
               </li>
               <li class="navigation-list_link">
-                <a href="">
+                <a href="./buy-tokens.html">
                   <i class="icon-dash"></i>
                   <span>Buy tokens</span>
                 </a>
               </li>
               <li class="navigation-list_link">
-                <a href="">
+                <a href="./ico-distribution.html">
                   <i class="icon-dash"></i>
                   <span>ICO Distribution</span>
                 </a>
               </li>
               <li class="navigation-list_link active">
-                <a href="">
+                <a href="./transactions.html">
                   <i class="icon-dash"></i>
                   <span>Transactions</span>
                 </a>
               </li>
               <li class="navigation-list_link">
-                <a href="">
+                <a href="./profile.html">
                   <i class="icon-dash"></i>
                   <span>Profile</span>
                 </a>
@@ -81,77 +81,80 @@
                 <h3 class="ui-bar_head-title">Transaction</h3>
               </div>
               <div class="ui-bar_body">
-                <table class="transaction-table">
-                  <thead class="transaction-table_head">
-                    <tr>
-                      <td>Tranx №</td>
-                      <td>Tokens</td>
-                      <td>Amount</td>
-                      <td>USD Amount</td>
-                      <td>From</td>
-                      <td>Type</td>
-                      <td></td>
-                    </tr>
-                  </thead>
-                  <tbody class="transaction-table_body">
-                    <tr>
-                      <td class="txid">
-                        <div class="txid-col">
-                          <i class="icon-success"></i>
-                          <div>
-                            <span>TNX1002</span>
-                            <span class="tr-small">1,330.00</span>
+                <div class="transaction-table_container">
+                  <table class="transaction-table">
+                    <thead class="transaction-table_head">
+                      <tr>
+                        <td>Tranx №</td>
+                        <td>Tokens</td>
+                        <td>Amount</td>
+                        <td>USD Amount</td>
+                        <td>From</td>
+                        <td>Type</td>
+                        <td></td>
+                      </tr>
+                    </thead>
+                    <tbody class="transaction-table_body">
+                      <tr>
+                        <td class="txid">
+                          <div class="txid-col">
+                            <i class="icon-success"></i>
+                            <div>
+                              <span>TNX1002</span>
+                              <span class="tr-small">1,330.00</span>
+                            </div>
                           </div>
-                        </div>
-                      </td>
-                      <td class="tokens">
-                        <div class="tokens-col">
-                          <span>18,750</span>
-                          <span class="tr-small">SORS</span>
-                        </div>
-                      </td>
-                      <td class="amount">
-                        <div class="amount-col">
-                          <span>50.00</span>
-                          <span class="tr-small">
-                            ETH
-                            <i class="icon-info"></i>
-                          </span>
-                        </div>
-                      </td>
-                      <td class="amount">
-                        <div class="amount-col">
-                          <span>245.52</span>
-                          <span class="tr-small">
-                            USD
-                            <i class="icon-info"></i>
-                          </span>
-                        </div>
-                      </td>
-                      <td class="from">
-                        <div class="from-col">
-                          <span>0x99f9740626de59B2cF76cc709C7A0b95f2B05D34</span>
-                          <span class="tr-small">08 Jul, 21 10:20PM</span>
-                        </div>
-                      </td>
-                      <td class="type">
-                        <div class="type-col">
-                          <div class="ui-label label-green">Purchase</div>
-                        </div>
-                      </td>
-                      <td class="action">
-                        <div class="action-col">
-                          <button class="button button-border h-40">
-                            Pay now
-                            <i class="icon-right ml-20"></i>
-                          </button>
-                          <button class="button button-icon">
+                        </td>
+                        <td class="tokens">
+                          <div class="tokens-col">
+                            <span>18,750</span>
+                            <span class="tr-small">SORS</span>
+                          </div>
+                        </td>
+                        <td class="amount">
+                          <div class="amount-col">
+                            <span>50.00</span>
+                            <span class="tr-small">
+                              ETH
+                              <i class="icon-info"></i>
+                            </span>
+                          </div>
+                        </td>
+                        <td class="amount">
+                          <div class="amount-col">
+                            <span>245.52</span>
+                            <span class="tr-small">
+                              USD
+                              <i class="icon-info"></i>
+                            </span>
+                          </div>
+                        </td>
+                        <td class="from">
+                          <div class="from-col">
+                            <span
+                              >0x99f9740626de59B2cF76cc709C7A0b95f2B05D34</span
+                            >
+                            <span class="tr-small">08 Jul, 21 10:20PM</span>
+                          </div>
+                        </td>
+                        <td class="type">
+                          <div class="type-col">
+                            <div class="ui-label label-green">Purchase</div>
+                          </div>
+                        </td>
+                        <td class="action">
+                          <div class="action-col">
+                            <button class="button button-border h-40">
+                              Pay now
+                              <i class="icon-right ml-20"></i>
+                            </button>
+                            <button class="button button-icon">
                               <i class="icon-delete"></i>
-                          </button>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
                         <td class="txid">
                           <div class="txid-col">
                             <i class="icon-pending"></i>
@@ -187,7 +190,9 @@
                         </td>
                         <td class="from">
                           <div class="from-col">
-                            <span>0x99f9740626de59B2cF76cc709C7A0b95f2B05D34</span>
+                            <span
+                              >0x99f9740626de59B2cF76cc709C7A0b95f2B05D34</span
+                            >
                             <span class="tr-small">08 Jul, 21 10:20PM</span>
                           </div>
                         </td>
@@ -199,7 +204,7 @@
                         <td class="action">
                           <div class="action-col">
                             <button class="button button-icon">
-                                <i class="icon-watch"></i>
+                              <i class="icon-watch"></i>
                             </button>
                           </div>
                         </td>
@@ -240,7 +245,9 @@
                         </td>
                         <td class="from">
                           <div class="from-col">
-                            <span>0x99f9740626de59B2cF76cc709C7A0b95f2B05D34</span>
+                            <span
+                              >0x99f9740626de59B2cF76cc709C7A0b95f2B05D34</span
+                            >
                             <span class="tr-small">08 Jul, 21 10:20PM</span>
                           </div>
                         </td>
@@ -252,27 +259,28 @@
                         <td class="action">
                           <div class="action-col">
                             <button class="button button-icon">
-                                <i class="icon-watch"></i>
+                              <i class="icon-watch"></i>
                             </button>
                           </div>
                         </td>
                       </tr>
-                  </tbody>
-                </table>
+                    </tbody>
+                  </table>
+                </div>
                 <div class="ui-pagination">
-                    <div class="ui-pagination_container">
-                        <div class="ui-pagination_controls">
-                            <button class="button button-icon w-75">prev</button>
-                            <button class="button button-icon active w-40">1</button>
-                            <button class="button button-icon w-40">2</button>
-                            <button class="button button-icon w-40">3</button>
-                            <button class="button button-icon w-75">next</button>
-                        </div>
-
-                        <div class="ui-pagination_totals">
-                            <p>1-7 of 18</p>
-                        </div>
+                  <div class="ui-pagination_container">
+                    <div class="ui-pagination_controls">
+                      <button class="button button-icon w-75">prev</button>
+                      <button class="button button-icon active w-40">1</button>
+                      <button class="button button-icon w-40">2</button>
+                      <button class="button button-icon w-40">3</button>
+                      <button class="button button-icon w-75">next</button>
                     </div>
+
+                    <div class="ui-pagination_totals">
+                      <p>1-7 of 18</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -298,7 +306,7 @@
           </ul>
 
           <div class="d-flex a-center gap-35">
-            <p class="footer-rights">© 2021 SORS Capital</p>
+            <p class="footer-rights">© 2021 SORS</p>
             <div class="language-select">
               <div class="language-select_active">
                 <img src="./icons/icon-uk.png" alt="" />

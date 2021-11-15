@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SORS</title>
+    <link rel="stylesheet" href="./styles/font.css" />
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/icons.css" />
+  </head>
+  <body>
+    <div class="auth-page">
+      <header>
+        <div class="header-container">
+          <div class="container">
+            <a href="./index.html" class="header-logo">
+              <img src="./images/logo-reverse.svg" alt="" />
+            </a>
+
+            <div class="header-controls d-flex">
+              <a href="./sign-in.html" class="button button-trans w-130">
+                Sign in
+              </a>
+              <a href="./sign-up.html" class="button w-130">Sign up</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="auth-container">
+        <div class="auth-form">
+          <h1 class="auth-form_title mb-10">Sign In</h1>
+          <p class="auth-form_subtitle mb-20">
+            Please check that you are visiting https://sors.com/login
+          </p>
+          <div class="auth-form_check">
+            <i class="icon-lock mr-10"></i>
+            <span class="text-green">https://</span> sors.com/login
+          </div>
+          <form class="auth-form_form auth-login">
+            <div class="input-group mb-10">
+              <label for="email" class="fs-16 mb-10">Email Address</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                class="input"
+                placeholder="example@email.com"
+              />
+            </div>
+
+            <div class="input-group mb-20">
+              <label for="pass" class="fs-16 mb-10">Password</label>
+              <input
+                type="password"
+                id="pass"
+                name="pass"
+                class="input"
+                placeholder="Enter your password"
+              />
+            </div>
+
+            <button class="button button-blue mb-20">Sign in</button>
+
+            <a href="" class="auth-form_link">Forgot password?</a>
+            <p class="fs-16 op-3308 mt-10">
+              Do not have SORS account?
+              <a href="./sign-up.html" class="auth-form_link">Sign Up</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

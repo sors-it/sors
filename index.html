@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SORS Capital</title>
+    <title>SORS</title>
     <link rel="stylesheet" href="./styles/font.css" />
     <link rel="stylesheet" href="./styles/layout.css" />
     <link rel="stylesheet" href="./styles/style.css" />
@@ -38,25 +38,25 @@
                 </a>
               </li>
               <li class="navigation-list_link">
-                <a href="">
+                <a href="./buy-tokens.html">
                   <i class="icon-dash"></i>
                   <span>Buy tokens</span>
                 </a>
               </li>
               <li class="navigation-list_link">
-                <a href="">
+                <a href="./ico-distribution.html">
                   <i class="icon-dash"></i>
                   <span>ICO Distribution</span>
                 </a>
               </li>
               <li class="navigation-list_link">
-                <a href="">
+                <a href="./transactions.html">
                   <i class="icon-dash"></i>
                   <span>Transactions</span>
                 </a>
               </li>
               <li class="navigation-list_link">
-                <a href="">
+                <a href="./profile.html">
                   <i class="icon-dash"></i>
                   <span>Profile</span>
                 </a>
@@ -95,9 +95,9 @@
                       Your Contribution
                     </p>
                     <div class="token-balance_value">
-                      <span>0.033 ETH</span>
-                      <span>0.0005 BTC</span>
-                      <span>0.09 LTC</span>
+                      <span><span>0.033</span> <span>ETH</span></span>
+                      <span><span>0.0005</span> <span>BTC</span></span>
+                      <span><span>0.09</span> <span>LTC</span></span>
                     </div>
                   </div>
                 </div>
@@ -105,8 +105,9 @@
 
               <div class="dashboard-rates ui-bar">
                 <div class="ui-bar_body py-20">
-                  <div class="grid-2 gap-60">
+                  <div class="grid-2 gap-60 gap-xs-40">
                     <div class="ui-vertical"></div>
+                    <div class="ui-line display-xs"></div>
                     <div class="dashboard-token">
                       <div class="dashboard-token_logo">
                         <img src="./images/color-logo.png" alt="" />
@@ -129,7 +130,7 @@
                       <div>
                         <div class="token-info_row mb-10">
                           <p>Token Name:</p>
-                          <p class="text-blue_op8">SORS Capital</p>
+                          <p class="text-blue_op8">SORS</p>
                         </div>
                         <div class="token-info_row">
                           <p>Ticket Symbol:</p>
@@ -155,7 +156,7 @@
                       <label for="amount" class="mb-5 fs-16 fw-400 op-3308">
                         Enter amount to calculate token
                       </label>
-                      <div class="d-flex a-end gap-10">
+                      <div class="d-flex a-end gap-10 column-xs a-xs-start">
                         <div class="relative">
                           <input
                             type="text"
@@ -197,63 +198,65 @@
                   </button>
                 </div>
                 <div class="ui-bar_body">
-                  <table class="dt-table transaction-table">
-                    <thead class="transaction-table_head">
-                      <tr>
-                        <td>SORS Tokens</td>
-                        <td>Amount</td>
-                        <td>Date</td>
-                        <td></td>
-                      </tr>
-                    </thead>
-                    <tbody class="transaction-table_body">
-                      <tr>
-                        <td>
-                          <div class="txid-col">
-                            <i class="icon-success"></i>
-                            <span>1,330.00</span>
-                          </div>
-                        </td>
-                        <td>0.930 ETH</td>
-                        <td>21.09.2021 12:32 pm</td>
-                        <td>
-                          <div class="type-col">
-                            <div class="ui-label label-green">Purchase</div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="txid-col">
-                            <i class="icon-pending"></i>
-                            <span>1,330.00</span>
-                          </div>
-                        </td>
-                        <td>0.930 ETH</td>
-                        <td>21.09.2021 12:32 pm</td>
-                        <td>
-                          <div class="type-col">
-                            <div class="ui-label label-green">Purchase</div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="txid-col">
-                            <i class="icon-rejected"></i>
-                            <span>1,330.00</span>
-                          </div>
-                        </td>
-                        <td>0.930 ETH</td>
-                        <td>21.09.2021 12:32 pm</td>
-                        <td>
-                          <div class="type-col">
-                            <div class="ui-label label-yellow">bonus</div>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div class="dt-table_container">
+                    <table class="dt-table transaction-table">
+                      <thead class="transaction-table_head">
+                        <tr>
+                          <td>SORS Tokens</td>
+                          <td>Amount</td>
+                          <td>Date</td>
+                          <td></td>
+                        </tr>
+                      </thead>
+                      <tbody class="transaction-table_body">
+                        <tr>
+                          <td>
+                            <div class="txid-col">
+                              <i class="icon-success"></i>
+                              <span>1,330.00</span>
+                            </div>
+                          </td>
+                          <td>0.930 ETH</td>
+                          <td>21.09.2021 12:32 pm</td>
+                          <td>
+                            <div class="type-col">
+                              <div class="ui-label label-green">Purchase</div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="txid-col">
+                              <i class="icon-pending"></i>
+                              <span>1,330.00</span>
+                            </div>
+                          </td>
+                          <td>0.930 ETH</td>
+                          <td>21.09.2021 12:32 pm</td>
+                          <td>
+                            <div class="type-col">
+                              <div class="ui-label label-green">Purchase</div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="txid-col">
+                              <i class="icon-rejected"></i>
+                              <span>1,330.00</span>
+                            </div>
+                          </td>
+                          <td>0.930 ETH</td>
+                          <td>21.09.2021 12:32 pm</td>
+                          <td>
+                            <div class="type-col">
+                              <div class="ui-label label-yellow">bonus</div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
 
@@ -366,7 +369,7 @@
           </ul>
 
           <div class="d-flex a-center gap-35">
-            <p class="footer-rights">© 2021 SORS Capital</p>
+            <p class="footer-rights">© 2021 SORS</p>
             <div class="language-select">
               <div class="language-select_active">
                 <img src="./icons/icon-uk.png" alt="" />

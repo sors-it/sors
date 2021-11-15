@@ -75,7 +75,6 @@
 .input-group .label-check {
   position: relative;
   display: flex;
-  align-items: center;
   gap: 12px;
   font-size: 16px;
   color: rgba(51, 51, 51, 0.8);
@@ -91,6 +90,7 @@
   background: rgba(19, 72, 228, 0.1);
   border-radius: 25px;
   z-index: 1;
+  flex-shrink: 0;
   transition: 200ms ease-in-out;
 }
 
@@ -175,6 +175,12 @@
   background: none;
   border: 1px solid #1348e4;
   color: #1348e4;
+}
+
+.button.button-trans {
+  background: none;
+  border: none;
+  color: #333333;
 }
 
 .button.h-40 {
@@ -297,6 +303,10 @@
   color: #f26a6a;
 }
 
+.text-green {
+  color: #4dc16e;
+}
+
 .bg-red {
   background: #f26a6a;
 }
@@ -315,6 +325,10 @@
 
 .w-75 {
   width: 75px;
+}
+
+.w-130 {
+  width: 130px;
 }
 
 .fw-400 {
@@ -422,14 +436,49 @@
   color: rgba(51, 51, 51, 0.5);
 }
 
+.display-xs {
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
   .container {
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 10px;
     box-sizing: border-box;
   }
 
-  .grid-3 {
-    grid-template-columns: 1fr;
+  .grid-3,
+  .grid-2,
+  .grid-2_1,
+  .grid-1_2 {
+    grid-template-columns: 100%;
+  }
+
+  .gap-xs-40 {
+    gap: 40px;
+  }
+
+  .gap-xs-20 {
+    gap: 20px;
+  }
+
+  .display-xs {
+    display: block;
+  }
+
+  .column-xs {
+    flex-direction: column;
+  }
+
+  .a-xs-start {
+    align-items: flex-start;
+  }
+
+  .j-xs-start {
+    justify-content: flex-start;
+  }
+
+  .input-group.w-65p .input {
+    width: 100%;
   }
 }

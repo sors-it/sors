@@ -53,7 +53,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   color: #333333;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 body::-webkit-scrollbar {
@@ -118,6 +118,12 @@ header {
   height: 48px;
   background: #ffffff;
   border-radius: 50%;
+}
+
+.auth-page .header-container {
+  height: 80px;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .dahsboard-navigation {
@@ -217,6 +223,37 @@ footer .container {
   min-height: calc(100vh - 160px);
   padding: 30px 0 100px;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .dahsboard-navigation {
+    display: none;
+  }
+
+  .header-user span {
+    display: none;
+  }
+
+  .footer-navigation,
+  footer .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-navigation {
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+
+  footer .d-flex {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 /* DASHBOARD PARTIALS */
 
@@ -339,6 +376,30 @@ footer .container {
   height: auto;
   transform: translateX(-50%);
 }
+
+@media screen and (max-width: 1024px) {
+  .dashboard-rates .ui-vertical {
+    display: none;
+  }
+
+  .dashboard-rates .ui-line {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    width: auto;
+    top: 199px;
+  }
+
+  .transaction-table_container {
+    max-width: 100%;
+    padding-bottom: 15px;
+    overflow-x: scroll;
+  }
+
+  .transaction-table_container .transaction-table {
+    min-width: 1180px;
+  }
+}
 /* TRANSACTION PAGE */
 
 /* ICO PAGE */
@@ -402,6 +463,17 @@ footer .container {
 .ico-note {
   font-size: 14px;
   color: rgba(51, 51, 51, 0.5);
+}
+
+@media screen and (max-width: 1024px) {
+  .ico-schedule_line {
+    grid-column: 1;
+  }
+
+  .ico-group_content.grid-3 {
+    grid-template-columns: 1fr;
+    gap: 30px 0;
+  }
 }
 /* ICO PAGE */
 
@@ -467,6 +539,37 @@ footer .container {
 .buy-tokens_step .icon-info {
   background: #f26a6a;
 }
+
+@media screen and (max-width: 1024px) {
+  .buy-token_page .tokens-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7px;
+  }
+
+  .tokens-list .tokens-list_item {
+    height: auto;
+    padding: 9px;
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    grid-template-areas:
+      "icon name"
+      "value value";
+    gap: 10px;
+  }
+
+  .tokens-list .tokens-list_item i {
+    grid-area: icon;
+  }
+
+  .tokens-list .tokens-list_item .tokens-name {
+    grid-area: name;
+  }
+
+  .tokens-list .tokens-list_item .tokens-value {
+    grid-area: value;
+    margin-left: 0;
+  }
+}
 /* BUY TOKENS PAGE */
 
 /* TOKEN BALANCE */
@@ -518,6 +621,16 @@ footer .container {
   font-size: 18px;
   display: flex;
   justify-content: space-between;
+}
+
+.token-balance_contr .token-balance_value span {
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .token-balance_contr .token-balance_value span {
+    display: block;
+  }
 }
 /* TOKEN BALANCE */
 
@@ -665,6 +778,12 @@ footer .container {
 .tp-timer_grid .tp-timer_col:last-child .tp-timer_col-time {
   border-right: none;
 }
+
+@media screen and (max-width: 1024px) {
+  .tp-timer_grid {
+    left: -10px;
+  }
+}
 /* TOKEN PRE-SALE */
 
 /* DASHBOARD PAGE */
@@ -741,8 +860,30 @@ footer .container {
 }
 
 @media screen and (max-width: 1024px) {
+  .dt-table_container {
+    max-width: 100%;
+    padding-bottom: 15px;
+    overflow-x: scroll;
+  }
+
+  .dt-table {
+    min-width: 740px;
+  }
+
   .dashboard-progress {
-    grid-column: 1;
+    grid-column: 1 / 2;
+  }
+
+  .dashboard-token_info .dashboard-token_info-download {
+    margin-top: 20px;
+  }
+
+  .dp-graph {
+    max-width: 100%;
+    overflow-x: scroll;
+  }
+
+  .dp-graph #saleGraph {
   }
 }
 /* DASHBOARD PAGE */
@@ -835,7 +976,80 @@ footer .container {
 .profile-tab_full {
   grid-column: 1 / 3;
 }
+
+@media screen and (max-width: 1024px) {
+  .profile-tab_full {
+    grid-column: 1;
+  }
+
+  .profile-data .profile-tabs {
+    max-width: calc(100vw - 60px);
+    overflow-x: scroll;
+  }
+
+  .profile-tabs .profile-tabs_item {
+    white-space: nowrap;
+  }
+}
 /* PROFILE PAGE */
+
+/* AUTH PAGE */
+.auth-container {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  padding: 30px 0 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f1f1f1;
+  box-sizing: border-box;
+}
+
+.auth-form .auth-form_title,
+.auth-form .auth-form_subtitle {
+  text-align: center;
+}
+
+.auth-form .auth-form_check {
+  width: 300px;
+  height: 40px;
+  margin: 0 auto 20px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.auth-form_form {
+  padding: 20px 30px;
+  margin: 0 auto;
+  background: #ffffff;
+  box-shadow: 0 5px 20px rgba(84, 84, 84, 0.05);
+  border-radius: 5px;
+}
+
+.auth-form_form .input {
+  width: 100%;
+}
+
+.auth-form_form .button {
+  width: 100%;
+}
+
+.auth-form_form.auth-login {
+  max-width: 380px;
+}
+
+.auth-form_link {
+  font-size: 16px;
+  color: #3f6ae6;
+  text-decoration: none;
+}
+/* AUTH PAGE */
 
 /* UI COMPONENTS */
 .ui-bar {
@@ -914,6 +1128,7 @@ footer .container {
   align-items: center;
   text-transform: uppercase;
   user-select: none;
+  white-space: nowrap;
 }
 
 .ui-label.label-green {
@@ -1023,5 +1238,27 @@ footer .container {
   font-weight: 700;
   font-size: 14px;
   color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+  .ui-alert .ui-alert_text {
+    display: flex;
+    align-items: center;
+  }
+
+  .ui-modal_overlay {
+    width: calc(100% - 20px);
+  }
+
+  .ui-pagination_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .ui-pagination_controls {
+    width: 100%;
+    justify-content: center;
+  }
 }
 /* UI COMPONENTS */
