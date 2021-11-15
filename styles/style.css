@@ -122,8 +122,12 @@ header {
 
 .auth-page .header-container {
   height: 80px;
+  padding: 0 20px 0 30px;
   background: #ffffff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .dahsboard-navigation {
@@ -998,7 +1002,7 @@ footer .container {
   position: relative;
   width: 100%;
   min-height: calc(100vh - 80px);
-  padding: 30px 0 110px;
+  padding: 30px 10px 110px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1036,18 +1040,29 @@ footer .container {
   width: 100%;
 }
 
-.auth-form_form .button {
-  width: 100%;
-}
-
 .auth-form_form.auth-login {
   max-width: 380px;
+}
+
+.auth-form_form.auth-signup {
+  max-width: 500px;
+  width: 100%;
 }
 
 .auth-form_link {
   font-size: 16px;
   color: #3f6ae6;
   text-decoration: none;
+}
+
+.auth-page .input {
+  padding: 10px 15px 8px;
+}
+
+.auth-form_form .button {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto 20px;
 }
 /* AUTH PAGE */
 
