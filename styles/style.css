@@ -381,6 +381,64 @@ footer .container {
   transform: translateX(-50%);
 }
 
+.transaction-modal {
+
+}
+
+.trans-border {
+  padding: 0 10px 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.trans-list_rows .trans-row {
+  padding: 10px 0 9px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-radius: 2px;
+}
+
+.trans-list_rows .trans-row.trans-row_triple {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.trans-list_rows .trans-row:last-child {
+  border-bottom: none;
+}
+
+.trans-row span {
+  font-size: 16px;
+}
+
+.trans-row .trans-row_val {
+  color: rgba(51, 51, 51, 0.8);
+}
+
+.trans-dts {
+  position: relative;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.trans-border .trans-dts::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 30px;
+  background: rgba(0,0,0,0.2);
+}
+
+.trans-border .trans-dts:first-child:before {
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
   .dashboard-rates .ui-vertical {
     display: none;
@@ -402,6 +460,14 @@ footer .container {
 
   .transaction-table_container .transaction-table {
     min-width: 1180px;
+  }
+
+  .trans-list_rows .trans-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .trans-list_rows .trans-row.trans-row_triple {
+    grid-template-columns: 1fr;
   }
 }
 /* TRANSACTION PAGE */
@@ -1253,6 +1319,14 @@ footer .container {
   font-weight: 700;
   font-size: 14px;
   color: #ffffff;
+}
+
+@media screen and (max-height: 790px) {
+  .ui-modal {
+    align-items: flex-start;
+    padding: 100px 0;
+    overflow-y: scroll;
+  }
 }
 
 @media screen and (max-width: 1024px) {
