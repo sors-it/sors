@@ -1,12 +1,15 @@
 gsap.registerPlugin(ScrollTrigger);
 
-AOS.init({
-  duration: 500,
-  once: false,
-  easing: 'ease-in-out',
-});
 
 window.onload = function () {
+  const items = document.querySelectorAll('.data-number');
+
+  AOS.init({
+    duration: 500,
+    once: false,
+    easing: 'ease-in-out',
+  });
+
   const slides = window.innerWidth > 1024 ? 3 : 1;
   const swiper = new Swiper('.swiper', {
     spaceBetween: 110,
@@ -16,11 +19,7 @@ window.onload = function () {
       prevEl: '.swiper-button-prev',
     },
   });
-};
 
-const items = document.querySelectorAll('.data-number');
-
-if (window.innerWidth > 1024) {
   gsap.from(items, {
     scrollTrigger: '#sors-token',
     textContent: 0,
@@ -37,52 +36,54 @@ if (window.innerWidth > 1024) {
     },
   });
 
-  const rows = 51;
-  const columns = 5;
-  const missingImages = 4; // The number of missing images in the last row
-  const frame_count = rows * columns - missingImages - 1;
-  const imageWidth = 3000;
-  const imageHeight = 30600;
-  const horizDiff = imageWidth / columns;
-  const vertDiff = imageHeight / rows;
-
-  const viewer = document.querySelector('.viewer-one');
-  const ctx = viewer.getContext('2d');
-  viewer.width = horizDiff;
-  viewer.height = vertDiff;
-
-  const image = new Image();
-  image.src = './images/coin-header.png';
-  image.onload = () => onUpdate();
-
-  const obj = { num: 0 };
-  gsap.to(obj, {
-    num: frame_count,
-    ease: 'steps(' + frame_count + ')',
-    scrollTrigger: {
-      trigger: '.viewer-one',
-      start: 'top 12%',
-      end: '840 center',
-      pin: true,
-      markers: false,
-      scrub: 1,
-    },
-    onUpdate: () => {
-      onUpdate();
-    },
-  });
-
-  function onUpdate() {
-    ctx.clearRect(0, 0, horizDiff, vertDiff);
-    const x = Math.round((obj.num % columns) * horizDiff);
-    const y = Math.round(Math.floor(obj.num / columns) * vertDiff);
-    ctx.drawImage(image, x, y, horizDiff, vertDiff, 0, 0, horizDiff, vertDiff);
+  function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
   }
-}
 
-function numberWithCommas(x) {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-}
+  if (window.innerWidth > 1024) {
+    const rows = 51;
+    const columns = 5;
+    const missingImages = 4; // The number of missing images in the last row
+    const frame_count = rows * columns - missingImages - 1;
+    const imageWidth = 3000;
+    const imageHeight = 30600;
+    const horizDiff = imageWidth / columns;
+    const vertDiff = imageHeight / rows;
+  
+    const viewer = document.querySelector('.viewer-one');
+    const ctx = viewer.getContext('2d');
+    viewer.width = horizDiff;
+    viewer.height = vertDiff;
+  
+    const image = new Image();
+    image.src = './images/coin-header.png';
+    image.onload = () => onUpdate();
+  
+    const obj = { num: 0 };
+    gsap.to(obj, {
+      num: frame_count,
+      ease: 'steps(' + frame_count + ')',
+      scrollTrigger: {
+        trigger: '.viewer-one',
+        start: 'top 12%',
+        end: '840 center',
+        pin: true,
+        markers: false,
+        scrub: 1,
+      },
+      onUpdate: () => {
+        onUpdate();
+      },
+    });
+  
+    function onUpdate() {
+      ctx.clearRect(0, 0, horizDiff, vertDiff);
+      const x = Math.round((obj.num % columns) * horizDiff);
+      const y = Math.round(Math.floor(obj.num / columns) * vertDiff);
+      ctx.drawImage(image, x, y, horizDiff, vertDiff, 0, 0, horizDiff, vertDiff);
+    }
+  }
+};
 
 function openYear(evt, year) {
   var i, tabcontent, tablinks;
