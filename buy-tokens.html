@@ -124,7 +124,7 @@
                       calculate the amount of token you will received. The
                       calculator helps to convert required currency to tokens.
                     </p>
-                    <form>
+                    <form >
                       <div
                         class="d-flex a-center gap-10 mb-10 column-xs a-xs-start"
                       >
@@ -141,7 +141,7 @@
                         <i class="icon-info mr-5"></i>
                         0.35 ETH minimum contribution require.
                       </span>
-                      <button class="button button-blue mt-30" type="submit">
+                      <button class="button button-blue mt-30" type="submit" id="payModal">
                         Buy Tokens
                       </button>
                     </form>
@@ -344,6 +344,47 @@
         </div>
       </div>
 
+      <div class="ui-modal buy-modal">
+        <div class="ui-modal_overlay">
+          <div class="ui-bar">
+            <i class="icon-close"></i>
+            <div class="ui-bar_body py-20">
+              <p class="mb-10 fw-500 mb-20">Buy SORS</p>
+
+              <div class="trans-border mb-20">
+                <div class="buy-modal_row">
+                  <div class="qr-code">
+                    <img src="./images/qr-code.png" alt="" width="190" height="190" class="qr-code_image" />
+                  </div>
+                  <div class="trans-list_rows">
+                    <div class="trans-row">
+                      <span>Wallet type:</span>
+                      <span class="trans-row_val">Bitcoin</span>
+                    </div>
+                    <div class="trans-row">
+                      <span>Amount to send:</span>
+                      <span class="trans-row_val">0.01</span>
+                    </div>
+                    <div class="trans-row">
+                      <span>TX Status:</span>
+                      <span class="trans-row_val">Waiting</span>
+                    </div>
+                    <div class="trans-row">
+                      <span>Wallet address to send:</span>
+                      <span class="trans-row_val">232ihjn53j4n5k3jnkn3jn45k34n53453</span>
+                    </div>
+                    <div class="trans-row">
+                      <span>TX Hash:</span>
+                      <span class="trans-row_val">DKJNJJNDKVFKVNSNVMSDHV</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <footer>
         <div class="container">
           <ul class="footer-navigation">
@@ -375,11 +416,12 @@
 
     <script>
       const modalShow = document.getElementById("walletModal");
-      const modalClose = document.getElementById("closeModal");
+      const modalPayShow = document.getElementById("payModal");
+      const modalClose = document.querySelectorAll(".icon-close");
       const modal = document.getElementsByClassName("ui-modal")[0];
+      const modalPay = document.getElementsByClassName("ui-modal")[1];
 
       function toggleModal() {
-        console.log(modal);
         if (modal.classList.contains("ui-modal_open")) {
           modal.classList.remove("ui-modal_open");
           document.body.style.overflow = "";
@@ -389,8 +431,30 @@
         }
       }
 
+      function toggleModalPay() {
+        if (modalPay.classList.contains("ui-modal_open")) {
+          modalPay.classList.remove("ui-modal_open");
+          document.body.style.overflow = "";
+        } else {
+          modalPay.classList.add("ui-modal_open");
+          document.body.style.overflow = "hidden";
+        }
+      }
+
+      function closeModals() {
+        modal.classList.remove("ui-modal_open");
+        modalPay.classList.remove("ui-modal_open");
+        document.body.style.overflow = "hidden";
+      }
+
       modalShow.addEventListener("click", toggleModal);
-      modalClose.addEventListener("click", toggleModal);
+      modalPayShow.addEventListener("click", function(event) {
+        event.preventDefault();
+        toggleModalPay();
+      });
+      modalClose.forEach(element => {
+        element.addEventListener('click', closeModals);
+      });
     </script>
   </body>
 </html>
