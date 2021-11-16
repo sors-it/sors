@@ -7,34 +7,34 @@ i {
 .icon-dash {
   width: 18px;
   height: 20px;
-  background: url("../icons/icon-dash.svg");
+  background: url('/icons/icon-dash.svg');
   transition: 250ms ease;
 }
 
 .icon-success {
   width: 32px;
   height: 32px;
-  background: url("../icons/icon-success.svg");
+  background: url('/icons/icon-success.svg');
 }
 
 .icon-pending {
   width: 32px;
   height: 32px;
-  background: url("../icons/icon-pending.svg");
+  background: url('/icons/icon-pending.svg');
 }
 
 .icon-rejected {
   width: 32px;
   height: 32px;
-  background: url("../icons/icon-rejected.svg");
+  background: url('/icons/icon-rejected.svg');
 }
 
 .icon-info {
   width: 18px;
   height: 18px;
   flex-shrink: 0;
-  -webkit-mask-image: url("../icons/icon-info.svg");
-  mask-image: url("../icons/icon-info.svg");
+  -webkit-mask-image: url('/icons/icon-info.svg');
+  mask-image: url('/icons/icon-info.svg');
   background: rgba(51, 51, 51, 0.2);
 }
 
@@ -45,87 +45,136 @@ i {
 .icon-delete {
   width: 15px;
   height: 16px;
-  background: url("../icons/icon-delete.svg");
+  background: url('/icons/icon-delete.svg');
 }
 
 .icon-watch {
   width: 20px;
   height: 14px;
-  background: url("../icons/icon-watch.svg");
+  background: url('/icons/icon-watch.svg');
 }
 
 .icon-right {
   width: 7px;
   height: 12px;
-  background: url("../icons/icon-right.svg");
+  background: url('/icons/icon-right.svg');
 }
 
 .icon-down {
   width: 12px;
   height: 7px;
-  background: url("../icons/icon-down.svg");
+  background: url('/icons/icon-down.svg');
 }
 
 .icon-right_white {
   width: 7px;
   height: 11px;
-  background: url("../icons/icon-right_white.svg");
+  background: url('/icons/icon-right_white.svg');
 }
 
 .icon-down {
   width: 12px;
   height: 7px;
-  background: url("../icons/icon-down.svg");
+  background: url('/icons/icon-down.svg');
 }
 
 .icon-eth {
   width: 13px;
   height: 22px;
-  -webkit-mask-image: url("../icons/icon-eth.svg");
-  mask-image: url("../icons/icon-eth.svg");
+  -webkit-mask-image: url('/icons/icon-eth.svg');
+  mask-image: url('/icons/icon-eth.svg');
   background: #000000;
 }
 
 .icon-btc {
   width: 17px;
   height: 24px;
-  -webkit-mask-image: url("../icons/icon-btc.svg");
-  mask-image: url("../icons/icon-btc.svg");
+  -webkit-mask-image: url('/icons/icon-btc.svg');
+  mask-image: url('/icons/icon-btc.svg');
   background: #000000;
 }
 
 .icon-ltc {
   width: 16px;
   height: 20px;
-  -webkit-mask-image: url("../icons/icon-ltc.svg");
-  mask-image: url("../icons/icon-ltc.svg");
+  -webkit-mask-image: url('/icons/icon-ltc.svg');
+  mask-image: url('/icons/icon-ltc.svg');
   background: #000000;
 }
 
 .icon-usd {
   width: 13px;
   height: 24px;
-  -webkit-mask-image: url("../icons/icon-usd.svg");
-  mask-image: url("../icons/icon-usd.svg");
+  -webkit-mask-image: url('/icons/icon-usd.svg');
+  mask-image: url('/icons/icon-usd.svg');
   background: #000000;
 }
 
 .icon-close {
   width: 24px;
   height: 24px;
-  -webkit-mask-image: url("../icons/icon-close.svg");
-  mask-image: url("../icons/icon-close.svg");
+  -webkit-mask-image: url('/icons/icon-close.svg');
+  mask-image: url('/icons/icon-close.svg');
   background: rgba(0, 0, 0, 0.5);
 }
 
 .icon-download {
   width: 21px;
   height: 17px;
-  background: url("../icons/icon-download.svg");
+  background: url('/icons/icon-download.svg');
 }
 
 .icon-lock {
   width: 14px;
   height: 18px;
-  background: url("../icons/icon-lock.svg");
+  background: url('/icons/icon-lock.svg');
 }
+
+.icon-passport {
+  width: 24px;
+  height: 30px;
+  background: url('/icons/icon-passport.svg');
+}
+
+.icon-ncard {
+  width: 30px;
+  height: 24px;
+  background: url('/icons/icon-ncard.svg');
+}
+
+.icon-dlicense {
+  width: 24px;
+  height: 30px;
+  background: url('/icons/icon-dlicense.svg');
+}
+
+.icon-drop_passport {
+  width: 60px;
+  height: 60px;
+  background: url('/icons/icon-drop_pass.svg');
+}
+
+.icon-drop_ncard1 {
+  width: 69px;
+  height: 67px;
+  background: url('/icons/icon-drop_ncacrd1.svg');
+}
+
+.icon-drop_ncard2 {
+  width: 69px;
+  height: 67px;
+  background: url('/icons/icon-drop_ncacrd2.svg');
+}
+
+.icon-drop_license {
+  width: 60px;
+  height: 60px;
+  background: url('/icons/icon-drop_license.svg');
+}
+
+.icon-subdoc {
+  width: 60px;
+  height: 60px;
+  background: url('/icons/icon-subdoc.svg');
+}
+

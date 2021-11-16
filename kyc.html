@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SORS</title>
+    <link rel="stylesheet" href="./styles/font.css" />
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/icons.css" />
+  </head>
+  <body>
+    <div class="dashboard-page">
+      <header>
+        <div class="header-container">
+          <div class="container">
+            <a href="./index.html" class="header-logo">
+              <img src="./images/logo.svg" alt="" />
+            </a>
+
+            <div class="header-user">
+              <span>Welcome! Name Lastname</span>
+              <div class="header-user_avatar">
+                <img src="" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav class="dahsboard-navigation">
+          <div class="container">
+            <ul class="dahsboard-navigation_list">
+              <li class="navigation-list_link">
+                <a href="./index.html">
+                  <i class="icon-dash"></i>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li class="navigation-list_link">
+                <a href="./buy-tokens.html">
+                  <i class="icon-dash"></i>
+                  <span>Buy tokens</span>
+                </a>
+              </li>
+              <li class="navigation-list_link">
+                <a href="./ico-distribution.html">
+                  <i class="icon-dash"></i>
+                  <span>ICO Distribution</span>
+                </a>
+              </li>
+              <li class="navigation-list_link">
+                <a href="./transactions.html">
+                  <i class="icon-dash"></i>
+                  <span>Transactions</span>
+                </a>
+              </li>
+              <li class="navigation-list_link">
+                <a href="./profile.html">
+                  <i class="icon-dash"></i>
+                  <span>Profile</span>
+                </a>
+              </li>
+
+              <li class="navigation-list_link active">
+                <a href="/kyc.html">
+                  <i class="icon-dash"></i>
+                  <span>KYC Application</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div class="dashboard-container">
+        <div class="kyc-page">
+          <div class="kyc-container ui-bar">
+            <div class="ui-bar_body py-20">
+              <p class="fw-500 text-center mb-10">Begin your ID-Verification</p>
+              <p class="fs-16 op-3308 text-center mb-30">
+                Verify your identity to participate in tokensale.
+              </p>
+              <div class="ui-line mb-30"></div>
+
+              <form class="kyc-form">
+                <div class="kyc-step">
+                  <div class="d-flex a-center mb-10">
+                    <div class="ui-label label-blue mr-15">Step 1</div>
+                    <p class="fw-500">Personal Details</p>
+                  </div>
+                  <p class="fs-16 op-3308 mb-20">
+                    Your simple personal information required for identification
+                  </p>
+
+                  <div class="d-flex mb-20">
+                    <i class="icon-info mr-5"></i>
+                    <p class="fs-14 op-3305">
+                      Please type carefully and fill out the form with your
+                      personal details. <br />
+                      Your can’t edit these details once you submitted the form.
+                    </p>
+                  </div>
+
+                  <div class="grid-2 gap-20 mb-30">
+                    <div class="input-group">
+                      <label for="fname" class="fs-16 op-3308 mb-10 required"
+                        >First Name</label
+                      >
+                      <input
+                        type="text"
+                        id="fname"
+                        name="fname"
+                        class="input"
+                        placeholder="First Name"
+                      />
+                    </div>
+
+                    <div class="input-group">
+                      <label for="lname" class="fs-16 op-3308 mb-10 required"
+                        >Last Name</label
+                      >
+                      <input
+                        type="text"
+                        id="lname"
+                        name="lname"
+                        class="input"
+                        placeholder="Last Name"
+                      />
+                    </div>
+
+                    <div class="input-group">
+                      <label for="email" class="fs-16 op-3308 mb-10 required"
+                        >Email Address</label
+                      >
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="input"
+                        placeholder="example@email.com"
+                      />
+                    </div>
+
+                    <div class="input-group">
+                      <label for="phone" class="fs-16 op-3308 mb-10 required"
+                        >Phone Number</label
+                      >
+                      <input
+                        type="text"
+                        id="phone"
+                        name="phone"
+                        class="input"
+                        placeholder="+_ _ ( _ _ _ ) _ _ - _ _ - _ _ _"
+                      />
+                    </div>
+
+                    <div class="input-group">
+                      <label for="birth" class="fs-16 op-3308 mb-10 required"
+                        >Date of Birth</label
+                      >
+                      <input
+                        type="text"
+                        id="birth"
+                        name="birth"
+                        class="input"
+                        placeholder="DD : MM : YY"
+                      />
+                    </div>
+
+                    <div class="input-group">
+                      <label for="telegram" class="fs-16 op-3308 mb-10"
+                        >Telegram Username</label
+                      >
+                      <input
+                        type="text"
+                        id="telegram"
+                        name="telegram"
+                        class="input"
+                        placeholder="@"
+                      />
+                    </div>
+                  </div>
+
+                  <p class="fw-500 text-center mb-20">Your Address</p>
+                  <div class="grid-2 gap-20 mb-30">
+                    <div class="input-group">
+                      <label for="address1" class="fs-16 op-3308 mb-10 required"
+                        >Address Line 1</label
+                      >
+                      <input
+                        type="text"
+                        id="address1"
+                        name="address1"
+                        class="input"
+                      />
+                    </div>
+
+                    <div class="input-group">
+                      <label for="address2" class="fs-16 op-3308 mb-10"
+                        >Address Line 2</label
+                      >
+                      <input type="text" id="address2" name="" class="input" />
+                    </div>
+
+                    <div class="input-group">
+                      <label for="city" class="fs-16 op-3308 mb-10 required"
+                        >City</label
+                      >
+                      <input type="text" id="city" name="city" class="input" />
+                    </div>
+
+                    <div class="input-group">
+                      <label for="state" class="fs-16 op-3308 mb-10 required"
+                        >State</label
+                      >
+                      <input
+                        type="text"
+                        id="state"
+                        name="state"
+                        class="input"
+                      />
+                    </div>
+
+                    <div class="input-group">
+                      <label for="nation" class="fs-16 op-3308 mb-10 required"
+                        >Nationality</label
+                      >
+                      <div class="relative input-select_relative">
+                        <select
+                          name="nation"
+                          id="nation"
+                          class="input input-select"
+                        >
+                          <option value="USA">United States</option>
+                          <option value="UK">United Kingdom</option>
+                          <option value="CN">China</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="input-group">
+                      <label for="zip" class="fs-16 op-3308 mb-10 required"
+                        >Zip Code</label
+                      >
+                      <input type="text" id="zip" name="zip" class="input" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ui-line mb-30"></div>
+
+                <div class="kyc-step mb-30">
+                  <div class="d-flex a-center mb-10">
+                    <div class="ui-label label-blue mr-15">Step 2</div>
+                    <p class="fw-500">Document Upload</p>
+                  </div>
+                  <p class="fs-16 op-3308 mb-20">
+                    To verify your identity, please upload any of your document
+                  </p>
+
+                  <div class="d-flex a-center mb-20">
+                    <i class="icon-info mr-5"></i>
+                    <p class="fs-14 op-3305">
+                      In order to complete, please upload any of the following
+                      personal document.
+                    </p>
+                  </div>
+
+                  <div class="grid-3 gap-10 mb-20">
+                    <div
+                      id="defaultOpen"
+                      class="kyc-doctype active"
+                      onclick="openItem(event, 'dropPass')"
+                    >
+                      <i class="icon-passport mr-5"></i>
+                      <span>Passport</span>
+                    </div>
+                    <div
+                      class="kyc-doctype"
+                      onclick="openItem(event, 'dropNCard')"
+                    >
+                      <i class="icon-ncard mr-5"></i>
+                      <span>Natioanal card</span>
+                    </div>
+                    <div
+                      class="kyc-doctype"
+                      onclick="openItem(event, 'dropLicense')"
+                    >
+                      <i class="icon-dlicense mr-5"></i>
+                      <span>Driver’s license</span>
+                    </div>
+                  </div>
+
+                  <p class="fs-16 fw-600 op-3305 mb-10">
+                    To avoid delays when verifying account, Please make sure
+                    bellow:
+                  </p>
+
+                  <ul class="kyc-checks mb-40">
+                    <li class="kyc-checks_item">
+                      Chosen credential must not be expaired.
+                    </li>
+                    <li class="kyc-checks_item">
+                      Document should be good condition and clearly visible.
+                    </li>
+                    <li class="kyc-checks_item">
+                      Make sure that there is no light glare on the card.
+                    </li>
+                  </ul>
+
+                  <div class="kyc-drop kyc-drop_container" id="dropPass">
+                    <label
+                      class="kyc-drop_group"
+                      ondrop="dropHandler(event);"
+                      ondragover="dragOverHandler(event);"
+                    >
+                      <i class="icon-drop_passport"></i>
+                      <span class="title"
+                        >Drag and Drop file or press Select</span
+                      >
+                      <span class="button">Select</span>
+                      <input type="file" />
+                    </label>
+                  </div>
+
+                  <div class="kyc-drop_container" id="dropNCard">
+                    <div class="grid-2 gap-20">
+                      <div class="kyc-drop">
+                        <label
+                          class="kyc-drop_group"
+                          ondrop="dropHandler(event);"
+                          ondragover="dragOverHandler(event);"
+                        >
+                          <i class="icon-drop_ncard1"></i>
+                          <span class="title"
+                            >Drag and Drop file or press Select</span
+                          >
+                          <span class="button">Select file 1</span>
+                          <input type="file" />
+                        </label>
+                      </div>
+                      <div class="kyc-drop">
+                        <label
+                          class="kyc-drop_group"
+                          ondrop="dropHandler(event);"
+                          ondragover="dragOverHandler(event);"
+                        >
+                          <i class="icon-drop_ncard2"></i>
+                          <span class="title"
+                            >Drag and Drop file or press Select</span
+                          >
+                          <span class="button">Select file 2</span>
+                          <input type="file" />
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="kyc-drop kyc-drop_container" id="dropLicense">
+                    <label
+                      class="kyc-drop_group"
+                      ondrop="dropHandler(event);"
+                      ondragover="dragOverHandler(event);"
+                    >
+                      <i class="icon-drop_license"></i>
+                      <span class="title"
+                        >Drag and Drop file or press Select</span
+                      >
+                      <span class="button">Select</span>
+                      <input type="file" />
+                    </label>
+                  </div>
+                </div>
+
+                <div class="ui-line mb-30"></div>
+
+                <div class="kyc-step">
+                  <div class="d-flex a-center mb-10">
+                    <div class="ui-label label-blue mr-15">Step 3</div>
+                    <p class="fw-500">Your Paying Wallet</p>
+                  </div>
+                  <p class="fs-16 op-3308 mb-20">
+                    Submit your wallet address that you are going to send funds
+                  </p>
+
+                  <div class="input-group mb-20">
+                    <label for="wallet" class="fs-16 op-3308 mb-10">
+                      Select Wallet
+                    </label>
+                    <div class="relative input-select_relative max-360">
+                      <select
+                        name="nation"
+                        id="nation"
+                        class="input input-select"
+                      >
+                        <option value="ETH" selected>Ethereum</option>
+                        <option value="LTC">Litecoin</option>
+                        <option value="BTC">Bitcoin</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="input-group mb-10">
+                    <label for="walletadd" class="fs-16 op-3308 mb-10"
+                      >Your Address for tokens:</label
+                    >
+                    <input
+                      type="text"
+                      id="walletadd"
+                      name="walletadd"
+                      class="input w-100"
+                      placeholder="0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae"
+                    />
+                  </div>
+
+                  <p class="fs-14 op-3305 mb-30">
+                    Note: Address should be ERC20-compliant.
+                  </p>
+                </div>
+
+                <div class="ui-line mb-30"></div>
+
+                <div class="input-group input-group_check mb-20">
+                  <input
+                    type="checkbox"
+                    id="term"
+                    name="term"
+                    class="input-check check-v2"
+                  />
+                  <label for="term" class="fs-16 op-3308">
+                    I agree to the
+                    <a href="" class="auth-form_link">Terms of Service</a>
+                    and
+                    <a href="" class="auth-form_link">Privacy Policy</a>.
+                  </label>
+                </div>
+
+                <div class="input-group input-group_check mb-40">
+                  <input
+                    type="checkbox"
+                    id="owner"
+                    name="owner"
+                    class="input-check check-v2"
+                  />
+                  <label for="owner" class="fs-16 op-3308">
+                    A am the beneficial owner of my account.
+                  </label>
+                </div>
+
+                <div class="d-flex">
+                  <button class="button button-blue">Process for verify</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="mb-75"></div>
+
+          <div class="kyc-container ui-bar">
+            <div class="ui-bar_body py-20">
+              <p class="fw-500 mb-10 text-center">KYC Verification</p>
+              <p class="fs-16 op-3308 text-center kyc-80center">
+                To comply with regulation each participant will have to go
+                through indentity verification (KYC/AML) to prevent fraud
+                causes. Please, complete our fast and secure verification
+                process to participate in our token sale.
+              </p>
+
+              <div class="trans-border kyc-verify mb-20">
+                <i class="icon-subdoc mb-15"></i>
+                <p class="fs-16 op-3308 text-center kyc-80center">
+                  You have not submitted your necessary documents to verify your
+                  identity. In order to purchase our tokens, please verify your
+                  identity.
+                </p>
+                <button class="button button-blue">
+                  Click here to complete your KYC
+                </button>
+              </div>
+
+              <p class="fs-16 op-3305 text-center">
+                If you have any question, please contact our support team
+                <a href="mailto:info@sors.com" class="auth-form_link">
+                  info@sors.com
+                </a>
+                .
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="container">
+          <ul class="footer-navigation">
+            <li class="footer-navigation_link">
+              <a href="">Wahitepaper</a>
+            </li>
+            <li class="footer-navigation_link">
+              <a href="./faq.html">FAQs</a>
+            </li>
+            <li class="footer-navigation_link">
+              <a href="">Privacy Police</a>
+            </li>
+            <li class="footer-navigation_link">
+              <a href="">Terms of Condition</a>
+            </li>
+          </ul>
+
+          <div class="d-flex a-center gap-35">
+            <p class="footer-rights">© 2021 SORS</p>
+            <div class="language-select">
+              <div class="language-select_active">
+                <img src="./icons/icon-uk.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      function openItem(evt, tab) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName('kyc-drop_container');
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = 'none';
+        }
+
+        tablinks = document.getElementsByClassName('kyc-doctype');
+
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(' active', '');
+        }
+        document.getElementById(tab).style.display = 'block';
+        evt.currentTarget.className += ' active';
+      }
+
+      document.getElementById('defaultOpen').click();
+
+      function dropHandler(ev) {
+        ev.preventDefault();
+        if (ev.dataTransfer.items) {
+          for (var i = 0; i < ev.dataTransfer.items.length; i++) {
+            if (ev.dataTransfer.items[i].kind === 'file') {
+              var file = ev.dataTransfer.items[i].getAsFile();
+              console.log(file);
+              ev.target.classList.add('file-added');
+            }
+          }
+        }
+      }
+
+      function dragOverHandler(ev) {
+        ev.preventDefault();
+      }
+    </script>
+  </body>
+</html>
