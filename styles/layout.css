@@ -50,7 +50,8 @@
   right: 4px;
   top: 4px;
   height: 32px;
-  width: 52px;
+  /* width: 52px; */
+  padding: 0 10px;
   background: #1348e4;
   border-radius: 3px;
   display: flex;
