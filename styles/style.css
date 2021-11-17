@@ -420,9 +420,15 @@ header {
   font-weight: 400;
 }
 
-.time-block_countdown p {
+.time-block_countdown .countdown-title {
+  font-weight: 500;
   color: #ffffff;
-  margin-bottom: 35px;
+  margin-bottom: 10px;
+}
+
+.time-block_countdown .countdown-subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 15px;
 }
 
 .timer-container {
@@ -472,6 +478,7 @@ header {
 .timer-group .timer-group_value {
   color: rgba(255, 255, 255, 1);
   font-size: 24px;
+  white-space: nowrap;
 }
 
 .timer-back {
@@ -1535,7 +1542,7 @@ header {
 
 .timer-block_v3 .timer-back_hold {
   height: 304px;
-  bottom: -111px;
+  bottom: -101px;
 }
 
 .timer-block_v3 .timed-button {
