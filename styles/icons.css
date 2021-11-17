@@ -178,3 +178,8 @@ i {
   background: url('/icons/icon-subdoc.svg');
 }
 
+.icon-logout {
+  width: 19px;
+  height: 18px;
+  background: url('/icons/icon-logout.svg');
+}

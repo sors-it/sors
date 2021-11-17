@@ -100,6 +100,56 @@ header {
   align-items: center;
 }
 
+.header-logout {
+  position: relative;
+}
+
+.header-logout .header-logout_icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header-logout_drop {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 186px;
+  height: 40px;
+  padding: 10px 15px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 15px rgba(84, 84, 84, 0.05);
+  border-radius: 5px;
+  text-decoration: none;
+  opacity: 0;
+  z-index: 99;
+  transition: opacity 200ms ease-in-out;
+}
+
+.header-logout_drop a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.header-logout.open-drop .header-logout_drop {
+  display: block;
+  opacity: 1;
+}
+
+.header-logout.open-drop .header-logout_icon i {
+  transform: rotate(180deg);
+}
+
 .header-user {
   display: flex;
   align-items: center;
