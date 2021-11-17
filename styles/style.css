@@ -1112,18 +1112,6 @@ footer .container {
   z-index: 1;
 }
 
-.input-select_relative::after {
-  content: '';
-  position: absolute;
-  top: 4px;
-  right: 4px;
-  bottom: 4px;
-  width: 32px;
-  height: 32px;
-  background: url('/icons/icon-down_group.svg');
-  cursor: pointer;
-  z-index: 0;
-}
 
 .profile-tab_full {
   grid-column: 1 / 3;

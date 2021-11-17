@@ -173,15 +173,17 @@
                               Nationality
                             </label>
                             <div class="relative input-select_relative">
-                              <select
-                                name="nation"
-                                id="nation"
-                                class="input input-select"
-                              >
-                                <option value="USA">United States</option>
-                                <option value="UK">United Kingdom</option>
-                                <option value="CN">China</option>
-                              </select>
+                              <div class="custom-select">
+                                <select
+                                  name="nation"
+                                  id="nation"
+                                  class="input input-select"
+                                >
+                                  <option value="USA">United States</option>
+                                  <option value="UK">United Kingdom</option>
+                                  <option value="CN">China</option>
+                                </select>
+                              </div>
                             </div>
                           </div>
 
@@ -340,7 +342,15 @@
                       will find your password, then can't access with that code.
                     </p>
                     <div
-                      class="d-flex a-center j-between mb-30 column-xs a-xs-start gap-xs-20"
+                      class="
+                        d-flex
+                        a-center
+                        j-between
+                        mb-30
+                        column-xs
+                        a-xs-start
+                        gap-xs-20
+                      "
                     >
                       <button class="button button-blue">Enable 2FA</button>
 
@@ -437,28 +447,29 @@
     </div>
 
     <script src="./script/index.js"></script>
+    <script src="./script/select.js"></script>
     <script>
       function openItem(evt, tab) {
         var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("profile-tab");
+        tabcontent = document.getElementsByClassName('profile-tab');
         for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
+          tabcontent[i].style.display = 'none';
         }
 
-        tablinks = document.getElementsByClassName("profile-tabs_item");
+        tablinks = document.getElementsByClassName('profile-tabs_item');
 
         for (i = 0; i < tablinks.length; i++) {
           tablinks[i].className = tablinks[i].className.replace(
-            " tab-active",
-            ""
+            ' tab-active',
+            ''
           );
         }
         console.log(tab, document.getElementById(tab));
-        document.getElementById(tab).style.display = "block";
-        evt.currentTarget.className += " tab-active";
+        document.getElementById(tab).style.display = 'block';
+        evt.currentTarget.className += ' tab-active';
       }
 
-      document.getElementById("defaultOpen").click();
+      document.getElementById('defaultOpen').click();
     </script>
   </body>
 </html>

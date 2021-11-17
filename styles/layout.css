@@ -521,6 +521,19 @@
 
 .select-selected::after {
   content: '';
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  bottom: 4px;
+  width: 32px;
+  height: 32px;
+  background: url('/icons/icon-down_group.svg');
+  cursor: pointer;
+  z-index: 0;
+}
+
+.select-selected::before {
+  display: none;
 }
 
 .select-selected.select-arrow-active::after {
@@ -528,6 +541,14 @@
 }
 
 .select-selected {
+  width: 100%;
+  height: 40px;
+  padding: 8px 10px 10px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 18px;
   cursor: pointer;
 }
 
@@ -559,12 +580,13 @@
   background-color: rgba(19, 72, 228, 0.1);
 }
 
-.custom-select .select-selected::after {
+.custom-theme .select-selected::after {
   display: none;
 }
 
-.custom-select .select-selected::before {
+.custom-theme .select-selected::before {
   content: '';
+  display: block;
   width: 12px;
   height: 7px;
   margin-right: 10px;
@@ -572,7 +594,7 @@
   border: none;
 }
 
-.custom-select .select-selected.select-arrow-active::before {
+.custom-theme .select-selected.select-arrow-active::before {
   transform: rotate(180deg);
 }
 

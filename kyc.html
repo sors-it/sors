@@ -235,15 +235,13 @@
                         >Nationality</label
                       >
                       <div class="relative input-select_relative">
-                        <select
-                          name="nation"
-                          id="nation"
-                          class="input input-select"
-                        >
-                          <option value="USA">United States</option>
-                          <option value="UK">United Kingdom</option>
-                          <option value="CN">China</option>
-                        </select>
+                        <div class="custom-select">
+                          <select name="nation" id="nation">
+                            <option value="USA">United States</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="CN">China</option>
+                          </select>
+                        </div>
                       </div>
                     </div>
 
@@ -397,15 +395,13 @@
                       Select Wallet
                     </label>
                     <div class="relative input-select_relative max-360">
-                      <select
-                        name="nation"
-                        id="nation"
-                        class="input input-select"
-                      >
-                        <option value="ETH" selected>Ethereum</option>
-                        <option value="LTC">Litecoin</option>
-                        <option value="BTC">Bitcoin</option>
-                      </select>
+                      <div class="custom-select">
+                        <select name="nation" id="nation">
+                          <option value="ETH" selected>Ethereum</option>
+                          <option value="LTC">Litecoin</option>
+                          <option value="BTC">Bitcoin</option>
+                        </select>
+                      </div>
                     </div>
                   </div>
 
@@ -528,6 +524,7 @@
     </div>
 
     <script src="./script/index.js"></script>
+    <script src="./script/select.js"></script>
     <script>
       function openItem(evt, tab) {
         var i, tabcontent, tablinks;
