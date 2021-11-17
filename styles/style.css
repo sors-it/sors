@@ -612,9 +612,11 @@ header {
 }
 
 .token-why_top {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
+  z-index: 2;
 }
 
 .token-why_top .tw-group {
@@ -634,6 +636,7 @@ header {
   transform: translateX(-50%);
   background: linear-gradient(90deg, #acc1ff, #7bef9b);
   border-radius: 8px;
+  z-index: 3;
 }
 
 .tw-group .tw-group_top div {
@@ -647,10 +650,13 @@ header {
 }
 
 .tw-group .tw-group_bot {
+  height: 106px;
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 10px;
   padding: 40px 15px 20px;
   box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(2px);
   z-index: 1;
 }
 
@@ -664,6 +670,11 @@ header {
   margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 420px 1fr;
+}
+ 
+.why-block .title-comp {
+  position: relative;
+  z-index: 3;
 }
 
 .tw-g_left,
@@ -696,14 +707,12 @@ header {
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
+  z-index: 0;
 }
 
 .tw-g_center .tw-g_img {
   position: absolute;
-  top: -45px;
-  left: 25px;
-  width: 410px;
-  height: 597.61px;
 }
 
 .tw-g_graph {
@@ -779,7 +788,7 @@ header {
   }
   .tw-g_center {
     grid-area: phone;
-    height: 400px;
+    height: 550px;
     width: 300px;
     margin: 0 auto;
     align-items: center;
@@ -819,8 +828,11 @@ header {
     left: 0;
   }
   .tw-g_right .tw-group .tw-group_top {
-    left: 10px;
+    left: 16px;
     right: auto;
+  }
+  .tw-g_center .button {
+    bottom: 40px;
   }
 }
 
@@ -1063,6 +1075,7 @@ header {
 }
 
 .token-col_perc {
+  width: 45px;
   font-weight: 500;
   font-size: 22px;
   color: #333333;
@@ -1188,7 +1201,7 @@ header {
 }
 
 .road-background {
-  padding: 95px 0 425px;
+  padding: 95px 0 255px;
   background: url("../images/token_background.svg");
   background-size: 100px 100px;
   background-attachment: fixed;
