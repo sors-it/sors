@@ -15,6 +15,12 @@
       <header class="dark-header">
         <div class="header-container">
           <div class="container">
+            <div class="mobile-menu_button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
             <a href="./index.html" class="header-logo">
               <img src="./images/logo.svg" alt="" />
             </a>
@@ -36,49 +42,51 @@
           </div>
         </div>
 
-        <nav class="dahsboard-navigation">
-          <div class="container">
-            <ul class="dahsboard-navigation_list">
-              <li class="navigation-list_link">
-                <a href="./index.html">
-                  <i class="icon-dash"></i>
-                  <span>Dashboard</span>
-                </a>
-              </li>
-              <li class="navigation-list_link active">
-                <a href="./buy-tokens.html">
-                  <i class="icon-dash"></i>
-                  <span>Buy tokens</span>
-                </a>
-              </li>
-              <li class="navigation-list_link">
-                <a href="./ico-distribution.html">
-                  <i class="icon-dash"></i>
-                  <span>ICO Distribution</span>
-                </a>
-              </li>
-              <li class="navigation-list_link">
-                <a href="./transactions.html">
-                  <i class="icon-dash"></i>
-                  <span>Transactions</span>
-                </a>
-              </li>
-              <li class="navigation-list_link">
-                <a href="./profile.html">
-                  <i class="icon-dash"></i>
-                  <span>Profile</span>
-                </a>
-              </li>
+        <div class="dahsboard-navigation_mobile">
+          <nav class="dahsboard-navigation">
+            <div class="container">
+              <ul class="dahsboard-navigation_list">
+                <li class="navigation-list_link">
+                  <a href="./index.html">
+                    <i class="icon-dash"></i>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <li class="navigation-list_link active">
+                  <a href="./buy-tokens.html">
+                    <i class="icon-dash"></i>
+                    <span>Buy tokens</span>
+                  </a>
+                </li>
+                <li class="navigation-list_link">
+                  <a href="./ico-distribution.html">
+                    <i class="icon-dash"></i>
+                    <span>ICO Distribution</span>
+                  </a>
+                </li>
+                <li class="navigation-list_link">
+                  <a href="./transactions.html">
+                    <i class="icon-dash"></i>
+                    <span>Transactions</span>
+                  </a>
+                </li>
+                <li class="navigation-list_link">
+                  <a href="./profile.html">
+                    <i class="icon-dash"></i>
+                    <span>Profile</span>
+                  </a>
+                </li>
 
-              <li class="navigation-list_link">
-                <a href="./kyc.html">
-                  <i class="icon-dash"></i>
-                  <span>KYC Application</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+                <li class="navigation-list_link">
+                  <a href="./kyc.html">
+                    <i class="icon-dash"></i>
+                    <span>KYC Application</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </header>
 
       <div class="dashboard-container">
@@ -132,9 +140,16 @@
                       calculate the amount of token you will received. The
                       calculator helps to convert required currency to tokens.
                     </p>
-                    <form >
+                    <form>
                       <div
-                        class="d-flex a-center gap-10 mb-10 column-xs a-xs-start"
+                        class="
+                          d-flex
+                          a-center
+                          gap-10
+                          mb-10
+                          column-xs
+                          a-xs-start
+                        "
                       >
                         <div class="input-group input-group_flabel">
                           <input type="text" class="input" placeholder="1" />
@@ -149,7 +164,11 @@
                         <i class="icon-info mr-5"></i>
                         0.35 ETH minimum contribution require.
                       </span>
-                      <button class="button button-blue mt-30" type="submit" id="payModal">
+                      <button
+                        class="button button-blue mt-30"
+                        type="submit"
+                        id="payModal"
+                      >
                         Buy Tokens
                       </button>
                     </form>
@@ -328,7 +347,14 @@
                   receive SORS Tokens and WILL LOSE YOUR FUNDS if you do.
                 </div>
                 <div
-                  class="d-flex j-between a-center column-xs a-xs-start gap-xs-20"
+                  class="
+                    d-flex
+                    j-between
+                    a-center
+                    column-xs
+                    a-xs-start
+                    gap-xs-20
+                  "
                 >
                   <button class="button button-blue">Add Wallet</button>
 
@@ -350,7 +376,13 @@
               <div class="trans-border mb-20">
                 <div class="buy-modal_row">
                   <div class="qr-code">
-                    <img src="./images/qr-code.png" alt="" width="190" height="190" class="qr-code_image" />
+                    <img
+                      src="./images/qr-code.png"
+                      alt=""
+                      width="190"
+                      height="190"
+                      class="qr-code_image"
+                    />
                   </div>
                   <div class="trans-list_rows">
                     <div class="trans-row">
@@ -367,7 +399,9 @@
                     </div>
                     <div class="trans-row">
                       <span>Wallet address to send:</span>
-                      <span class="trans-row_val">232ihjn53j4n5k3jnkn3jn45k34n53453</span>
+                      <span class="trans-row_val"
+                        >232ihjn53j4n5k3jnkn3jn45k34n53453</span
+                      >
                     </div>
                     <div class="trans-row">
                       <span>TX Hash:</span>
@@ -412,44 +446,44 @@
 
     <script src="./script/index.js"></script>
     <script>
-      const modalShow = document.getElementById("walletModal");
-      const modalPayShow = document.getElementById("payModal");
-      const modalClose = document.querySelectorAll(".icon-close");
-      const modal = document.getElementsByClassName("ui-modal")[0];
-      const modalPay = document.getElementsByClassName("ui-modal")[1];
+      const modalShow = document.getElementById('walletModal');
+      const modalPayShow = document.getElementById('payModal');
+      const modalClose = document.querySelectorAll('.icon-close');
+      const modal = document.getElementsByClassName('ui-modal')[0];
+      const modalPay = document.getElementsByClassName('ui-modal')[1];
 
       function toggleModal() {
-        if (modal.classList.contains("ui-modal_open")) {
-          modal.classList.remove("ui-modal_open");
-          document.body.style.overflow = "";
+        if (modal.classList.contains('ui-modal_open')) {
+          modal.classList.remove('ui-modal_open');
+          document.body.style.overflow = '';
         } else {
-          modal.classList.add("ui-modal_open");
-          document.body.style.overflow = "hidden";
+          modal.classList.add('ui-modal_open');
+          document.body.style.overflow = 'hidden';
         }
       }
 
       function toggleModalPay() {
-        if (modalPay.classList.contains("ui-modal_open")) {
-          modalPay.classList.remove("ui-modal_open");
-          document.body.style.overflow = "";
+        if (modalPay.classList.contains('ui-modal_open')) {
+          modalPay.classList.remove('ui-modal_open');
+          document.body.style.overflow = '';
         } else {
-          modalPay.classList.add("ui-modal_open");
-          document.body.style.overflow = "hidden";
+          modalPay.classList.add('ui-modal_open');
+          document.body.style.overflow = 'hidden';
         }
       }
 
       function closeModals() {
-        modal.classList.remove("ui-modal_open");
-        modalPay.classList.remove("ui-modal_open");
-        document.body.style.overflow = "hidden";
+        modal.classList.remove('ui-modal_open');
+        modalPay.classList.remove('ui-modal_open');
+        document.body.style.overflow = 'hidden';
       }
 
-      modalShow.addEventListener("click", toggleModal);
-      modalPayShow.addEventListener("click", function(event) {
+      modalShow.addEventListener('click', toggleModal);
+      modalPayShow.addEventListener('click', function (event) {
         event.preventDefault();
         toggleModalPay();
       });
-      modalClose.forEach(element => {
+      modalClose.forEach((element) => {
         element.addEventListener('click', closeModals);
       });
     </script>
