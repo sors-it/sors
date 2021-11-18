@@ -544,11 +544,6 @@ header {
     display: none;
   }
 
-  .timer-cap {
-    display: flex;
-    gap: 30px;
-  }
-
   .timer-block_grid.timer-grid_v2 {
     display: grid;
     grid-template-columns: 1fr;
@@ -678,7 +673,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 420px 1fr;
 }
- 
+
 .why-block .title-comp {
   position: relative;
   z-index: 3;
