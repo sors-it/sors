@@ -5,12 +5,12 @@ function toggleMenu() {
   if (mobMenu.classList.contains('show-menu')) {
     mobMenu.classList.remove('show-menu');
     mobButton.classList.remove('active');
-    document.body.style.overflow = '';
+    // document.body.style.overflow = '';
     return true
   }
   mobMenu.classList.add('show-menu');
   mobButton.classList.add('active');
-  document.body.style.overflow = 'hidden';
+  // document.body.style.overflow = 'hidden';
 }
 
 mobButton.addEventListener('click', toggleMenu);

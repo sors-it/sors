@@ -162,7 +162,9 @@
                       </div>
                       <span class="fs-14 op-3305 d-flex a-center">
                         <i class="icon-info mr-5"></i>
-                        0.35 ETH minimum contribution require.
+                        <span class="mr-3">0.35</span>
+                        <span class="mr-3">ETH</span>
+                        minimum contribution require.
                       </span>
                       <button
                         class="button button-blue mt-30"
@@ -475,7 +477,7 @@
       function closeModals() {
         modal.classList.remove('ui-modal_open');
         modalPay.classList.remove('ui-modal_open');
-        document.body.style.overflow = 'hidden';
+        document.body.style.overflow = '';
       }
 
       modalShow.addEventListener('click', toggleModal);
