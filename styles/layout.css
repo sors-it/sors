@@ -619,15 +619,22 @@
   text-align: right;
 }
 
-.success-cube {
+.color-cube {
   width: 60px;
   height: 60px;
   margin: 30px auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(107, 202, 105, 0.05);
   border-radius: 5px;
+}
+
+.success-cube {  
+  background: rgba(107, 202, 105, 0.05);
+}
+
+.pending-cube {
+  background: rgba(255, 197, 109, 0.05);
 }
 
 @media screen and (max-width: 1024px) {
