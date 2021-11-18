@@ -360,7 +360,7 @@
                         gap-xs-20
                       "
                     >
-                      <button class="button button-blue">Enable 2FA</button>
+                      <a class="button button-blue" id="faModal">Enable 2FA</a>
 
                       <div class="d-flex a-center gap-10">
                         <span class="fs-16 op-3305">Current Status:</span>
@@ -425,6 +425,33 @@
         </div>
       </div>
 
+      <div class="ui-modal buy-modal">
+        <div class="ui-modal_overlay">
+          <div class="ui-bar">
+            <i class="icon-close"></i>
+            <div class="ui-bar_body py-20">
+              <div class="mb-75">
+                <div class="success-cube mb-30 mt-30">
+                  <img
+                    src="/icons/icon-check.svg"
+                    width="28"
+                    height="19"
+                    alt=""
+                  />
+                </div>
+                <p class="fw-500 mb-10 text-center">
+                  Two-factor authentification Successful
+                </p>
+                <p class="fs-16 op-3308 text-center kyc-80center">
+                  After aplying, you'll need to enter both your password and a
+                  security code from sms to sign in to your accaunt.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <footer>
         <div class="container">
           <ul class="footer-navigation">
@@ -472,12 +499,28 @@
             ''
           );
         }
-        console.log(tab, document.getElementById(tab));
         document.getElementById(tab).style.display = 'block';
         evt.currentTarget.className += ' tab-active';
       }
 
       document.getElementById('defaultOpen').click();
+
+      const modalShow = document.getElementById('faModal');
+      const modalClose = document.getElementsByClassName('icon-close')[0];
+      const modal = document.getElementsByClassName('ui-modal')[0];
+
+      function toggleModal() {
+        if (modal.classList.contains('ui-modal_open')) {
+          modal.classList.remove('ui-modal_open');
+          document.body.style.overflow = '';
+        } else {
+          modal.classList.add('ui-modal_open');
+          document.body.style.overflow = 'hidden';
+        }
+      }
+
+      modalShow.addEventListener('click', toggleModal);
+      modalClose.addEventListener('click', toggleModal);
     </script>
   </body>
 </html>

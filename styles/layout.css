@@ -619,6 +619,17 @@
   text-align: right;
 }
 
+.success-cube {
+  width: 60px;
+  height: 60px;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(107, 202, 105, 0.05);
+  border-radius: 5px;
+}
+
 @media screen and (max-width: 1024px) {
   .container {
     max-width: 100%;

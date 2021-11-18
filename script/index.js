@@ -32,3 +32,16 @@ mobButton.addEventListener('click', toggleMenu);
 menuItems.forEach(function (menuItem) {
   menuItem.addEventListener('click', toggleMenu);
 });
+
+const modals = document.querySelectorAll(".ui-modal");
+
+function closeOutside(modal) {
+  modal.classList.remove('ui-modal_open');
+  document.body.style.overflow = '';
+}
+
+modals.forEach((element) => {
+  element.addEventListener('click', function(event) {
+    if (element == event.target) closeOutside(element);
+  });
+});
