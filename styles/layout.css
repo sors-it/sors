@@ -234,6 +234,12 @@
   height: 50px;
 }
 
+.button.button-mini {
+  margin-top: 5px;
+  height: 24px;
+  width: 100px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -354,6 +360,10 @@
 
 .text-blue_op8 {
   color: rgba(19, 72, 228, 0.8);
+}
+
+.text-blue_soft {
+  color: #ACC1FF;
 }
 
 .text-red {
@@ -519,6 +529,10 @@
 
 .op-3305 {
   color: rgba(51, 51, 51, 0.5);
+}
+
+.op-ff05 {
+  color: rgba(255,255,255,0.5);
 }
 
 .display-xs {
