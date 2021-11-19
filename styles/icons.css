@@ -183,3 +183,9 @@ i {
   height: 18px;
   background: url('/icons/icon-logout.svg');
 }
+
+.icon-empty {
+  width: 175px;
+  height: 65px;
+  background: url('/icons/icon-empty.svg');
+}

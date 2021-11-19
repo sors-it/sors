@@ -1154,6 +1154,15 @@ footer .container {
   height: 205px;
 }
 
+.dt-table_empty {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(19, 72, 228, 0.02);
+}
+
 .dashboard-calculator .input-flabel {
   width: 72px;
 }
