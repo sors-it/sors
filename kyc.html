@@ -330,11 +330,20 @@
                       ondragover="dragOverHandler(event);"
                     >
                       <i class="icon-drop_passport"></i>
-                      <span class="title"
-                        >Drag and Drop file or press Select</span
-                      >
+                      <span class="title">
+                        Drag and Drop file or press Select
+                      </span>
                       <span class="button">Select</span>
-                      <input type="file" />
+                      <input type="file" class="input-file" onchange="showSuccess(event)" />
+
+                      <div class="kyc-drop_success">
+                        <div>
+                          <div class="color-cube success-cube mb-10">
+                            <img src="/icons/icon-check.svg" width="30" height="30" alt="">
+                          </div>
+                          <span class="fs-16 op-3305">Your file was uploaded successfully</span>
+                        </div>
+                      </div>
                     </label>
                   </div>
 
@@ -351,7 +360,15 @@
                             >Drag and Drop file or press Select</span
                           >
                           <span class="button">Select file 1</span>
-                          <input type="file" />
+                          <input type="file" class="input-file" onchange="showSuccess(event)" />
+                          <div class="kyc-drop_success">
+                            <div>
+                              <div class="color-cube success-cube mb-10">
+                                <img src="/icons/icon-check.svg" width="30" height="30" alt="">
+                              </div>
+                              <span class="fs-16 op-3305">Your file was uploaded successfully</span>
+                            </div>
+                          </div>
                         </label>
                       </div>
                       <div class="kyc-drop">
@@ -365,7 +382,15 @@
                             >Drag and Drop file or press Select</span
                           >
                           <span class="button">Select file 2</span>
-                          <input type="file" />
+                          <input type="file" class="input-file" onchange="showSuccess(event)" />
+                          <div class="kyc-drop_success">
+                            <div>
+                              <div class="color-cube success-cube mb-10">
+                                <img src="/icons/icon-check.svg" width="30" height="30" alt="">
+                              </div>
+                              <span class="fs-16 op-3305">Your file was uploaded successfully</span>
+                            </div>
+                          </div>
                         </label>
                       </div>
                     </div>
@@ -382,7 +407,15 @@
                         >Drag and Drop file or press Select</span
                       >
                       <span class="button">Select</span>
-                      <input type="file" />
+                      <input type="file" class="input-file" onchange="showSuccess(event)" />
+                      <div class="kyc-drop_success">
+                        <div>
+                          <div class="color-cube success-cube mb-10">
+                            <img src="/icons/icon-check.svg" width="30" height="30" alt="">
+                          </div>
+                          <span class="fs-16 op-3305">Your file was uploaded successfully</span>
+                        </div>
+                      </div>
                     </label>
                   </div>
                 </div>
@@ -584,8 +617,8 @@
           for (var i = 0; i < ev.dataTransfer.items.length; i++) {
             if (ev.dataTransfer.items[i].kind === 'file') {
               var file = ev.dataTransfer.items[i].getAsFile();
-              console.log(file);
-              ev.target.classList.add('file-added');
+              if (ev.target.parentElement.classList.contains("kyc-drop_container")) ev.target.parentElement.classList.add('success-add');
+              else ev.target.classList.add('success-add');
             }
           }
         }
@@ -594,6 +627,12 @@
       function dragOverHandler(ev) {
         ev.preventDefault();
       }
+
+      function showSuccess(event) {
+        if (event.target.files[0]) {
+          event.target.parentElement.classList.add("success-add");
+        }
+      };
     </script>
   </body>
 </html>
