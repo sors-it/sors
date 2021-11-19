@@ -1688,7 +1688,7 @@ footer .container {
   flex-shrink: 0;
 }
 
-.ui-modal .icon-close {
+.ui-modal_overlay .icon-close {
   position: absolute;
   right: 20px;
   top: 20px;
@@ -1709,6 +1709,18 @@ footer .container {
   font-weight: 700;
   font-size: 14px;
   color: #ffffff;
+}
+
+.verification-modal .ui-modal_overlay {
+  max-width: 380px;
+}
+
+.verification-modal .input {
+  width: 100%;
+}
+
+.verification-modal .ui-bar {
+  padding: 0 40px;
 }
 
 @media screen and (max-height: 790px) {

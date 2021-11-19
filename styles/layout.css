@@ -219,6 +219,13 @@
   color: #333333;
 }
 
+.button.button.button-blue:disabled,
+.button.button-blue.button-disable {
+  background: rgba(19, 72, 228, 0.5);
+  border-color: transparent;
+  cursor: default;
+}
+
 .button.h-40 {
   height: 40px;
 }
@@ -369,6 +376,10 @@
   width: 40px;
 }
 
+.w-100 {
+  width: 100%;
+}
+
 .h-50 {
   height: 50px;
 }
@@ -469,6 +480,10 @@
   margin-top: 10px;
 }
 
+.mt-20 {
+  margin-top: 20px;
+}
+
 .mt-30 {
   margin-top: 30px;
 }
@@ -487,6 +502,10 @@
 
 .pb-30 {
   padding-bottom: 30px;
+}
+
+.pr-30 {
+  padding-right: 30px;
 }
 
 .op-3308 {
